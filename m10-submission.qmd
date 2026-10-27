@@ -1,0 +1,28 @@
+---
+title: "M10: Quarto Portfolio Website"
+subtitle: "IBM 6500 · Module 10 Submission"
+author: "Ron Stephen Sabilla"
+date: today
+format:
+  html:
+    theme: [cosmo, custom.scss]
+    embed-resources: true
+    toc: false
+---
+
+## Website Links
+
+::: {.card-box}
+🌐 **Live website (GitHub Pages):** <https://rsabilla.github.io/m10-quarto-website/>
+
+📁 **GitHub repository (all source files):** <https://github.com/rsabilla/m10-quarto-website>
+:::
+
+## What's on the Site
+
+| Page | What it covers |
+|---|---|
+| **Home** | Short bio, photo, career aspirations, skills, and education |
+| **Dashboard** | Portal to a Quarto dashboard for my MSDM CEP (Wellness Ranch Therapy GA4 data): acquisition, content & devices, and tracking health |
+| **CSS & SCSS** | How the site is styled with a custom SCSS theme layered on Bootswatch Cosmo, with live examples |
+| **Listings** | How Quarto listings work, with a filterable grid of my portfolio projects |

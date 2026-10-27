@@ -1,0 +1,5 @@
+channel,sessions,engaged_sessions,engagement_rate,avg_engagement_sec,events_per_session,event_count
+Referral,479,370,77.24,25,5.94,2843
+Organic,207,142,68.60,56,6.49,1343
+Direct,182,104,57.14,39,5.43,988
+(not set),32,17,53.13,49,7.22,231

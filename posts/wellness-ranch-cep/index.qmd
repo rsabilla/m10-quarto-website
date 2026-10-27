@@ -1,0 +1,17 @@
+---
+title: "MSDM Culminating Experience: Wellness Ranch Therapy"
+description: "Capstone digital marketing project for a nonprofit client covering website & SEO, GA4 analytics, and Google Ad Grants."
+date: 2026-10-15
+categories: [GA4, Google Ad Grants, Nonprofit, CEP]
+image: thumbnail.png
+---
+
+Our MSDM capstone team is working with **Wellness Ranch Therapy**, a nonprofit, across three workstreams: Website & SEO, Data Analytics (GA4), and Google Ad Grants.
+
+**My role:**
+
+- Wrote the Background and Business Problem section
+- Own **AO4**: analyzing Google Ad Grants campaign data after launch to improve CTR and conversion rates while keeping the grant compliant
+- Led the Analytics Blueprint deliverable for the team's GA4/GTM measurement plan
+
+**Timeline:** Fall 2026 (implement & collect data) → Spring 2027 (analyze & refine) → Summer 2027 (execute & optimize)

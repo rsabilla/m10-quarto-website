@@ -1,0 +1,13 @@
+---
+title: "SQL & BigQuery Learning Portfolio"
+description: "Three DataCamp courses (Intro to SQL, Intro to BigQuery, Intermediate SQL) documented with marketing-focused query examples."
+date: 2026-10-23
+categories: [SQL, BigQuery, GitHub Pages]
+image: thumbnail.png
+---
+
+A GitHub Pages portfolio built across three IBM 6500 assignments. Each report includes the course certificate, chapter-by-chapter notes, and SQL examples rewritten around marketing data like orders, campaigns, and GA4 sessions.
+
+**Skills:** `COUNT`/`DISTINCT`, filtering, aggregates, `GROUP BY`/`HAVING`, BigQuery GoogleSQL
+
+[View the portfolio →](https://rsabilla.github.io/ibm-6500-sql-learning-portfolio/)

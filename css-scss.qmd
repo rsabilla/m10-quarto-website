@@ -1,0 +1,153 @@
+---
+title: "Styling a Quarto Website with CSS & SCSS"
+subtitle: "How this site gets its look, and how you can customize yours"
+---
+
+## Why Style a Quarto Site?
+
+Quarto sites look clean out of the box thanks to Bootstrap themes, but every site using the default theme looks the same. CSS and SCSS let you match your **personal or client brand** (colors, fonts, spacing) so the site feels like *yours*.
+
+::: {.callout-tip}
+## Quick definitions
+- **CSS (Cascading Style Sheets):** the language browsers use to style HTML (colors, fonts, layout).
+- **SCSS (Sassy CSS):** a superset of CSS that adds **variables, nesting, and functions**. Quarto compiles it into regular CSS when you render.
+:::
+
+## Option 1: Plain CSS
+
+The simplest approach is a `.css` file linked in `_quarto.yml`:
+
+```{.yaml filename="_quarto.yml"}
+format:
+  html:
+    theme: cosmo
+    css: styles.css
+```
+
+```{.css filename="styles.css"}
+h2 {
+  color: #1E4D2B;
+  border-bottom: 3px solid #FFB81C;
+}
+```
+
+This works well for small tweaks, but you repeat values (like `#1E4D2B`) everywhere, and you can't change Bootstrap's built-in variables.
+
+## Option 2: SCSS Theme File (What This Site Uses)
+
+A Quarto SCSS file has two special sections:
+
+| Section | Purpose | Example |
+|---|---|---|
+| `/*-- scss:defaults --*/` | Set **variables** *before* Bootstrap compiles: theme colors, fonts, navbar | `$primary: #1E4D2B;` |
+| `/*-- scss:rules --*/` | Write **custom CSS rules** that use those variables | `.card-box { ... }` |
+
+Then layer it on top of a Bootswatch theme in `_quarto.yml`:
+
+```{.yaml filename="_quarto.yml"}
+format:
+  html:
+    theme:
+      light: [cosmo, custom.scss]
+```
+
+Here's a trimmed version of this site's actual `custom.scss`:
+
+```{.scss filename="custom.scss"}
+/*-- scss:defaults --*/
+$brand-green: #1E4D2B;
+$brand-gold:  #FFB81C;
+$primary:     $brand-green;   // navbar + buttons turn green
+$font-family-sans-serif: "Inter", system-ui, sans-serif;
+
+/*-- scss:rules --*/
+h2 {
+  border-bottom: 3px solid $brand-gold;
+}
+
+.card-box {
+  border-radius: 12px;
+  box-shadow: 0 2px 8px rgba(30, 77, 43, .06);
+  &:hover {                    // nesting: hover state lives inside the rule
+    transform: translateY(-2px);
+  }
+}
+```
+
+Because `$primary` is set *before* Bootstrap compiles, the navbar, links, buttons, and callouts all pick up the brand green automatically. One variable change restyles the whole site.
+
+## Applying Custom Classes in Quarto
+
+Once a class exists in your SCSS, you can apply it anywhere with **fenced divs** (`:::`) or **spans** (`[]{}`).
+
+::: {.panel-tabset}
+
+### Markdown
+
+```markdown
+::: {.demo-highlight}
+**Insight:** Organic search drove the most donations this quarter.
+:::
+
+I know [SQL]{.skill} and [R]{.skill}.
+```
+
+### Result
+
+::: {.demo-highlight}
+**Insight:** Organic search drove the most donations this quarter.
+:::
+
+I know [SQL]{.skill} and [R]{.skill}.
+
+:::
+
+## SCSS Features Worth Knowing
+
+::: {.grid}
+
+::: {.g-col-12 .g-col-md-4}
+::: {.card-box}
+**Variables**
+
+Store a value once (`$brand-green`) and reuse it everywhere. Change it in one place to rebrand.
+:::
+:::
+
+::: {.g-col-12 .g-col-md-4}
+::: {.card-box}
+**Nesting**
+
+Write `&:hover` inside `.card-box` instead of repeating the selector. It keeps related styles together.
+:::
+:::
+
+::: {.g-col-12 .g-col-md-4}
+::: {.card-box}
+**Functions**
+
+`lighten($brand-green, 15%)` makes color variations on the fly, like the gradient in the demo box above.
+:::
+:::
+
+:::
+
+## Light & Dark Mode
+
+SCSS also makes a dark-mode toggle easy. Quarto adds the switch to the navbar automatically:
+
+```{.yaml filename="_quarto.yml"}
+format:
+  html:
+    theme:
+      light: [cosmo, custom.scss]
+      dark:  [darkly, custom-dark.scss]
+```
+
+## Tips for Marketing Sites
+
+- **Start with brand variables.** Pull the client's hex codes from their style guide into `scss:defaults` first.
+- **Use `$primary` instead of hard-coding colors**, so buttons and links stay consistent.
+- **Keep custom classes reusable** (`.card-box`, `.skill`) instead of styling one-off elements.
+- **Check contrast.** Brand gold on white can fail accessibility, so use it for accents and borders, not body text.
+- **Inspect in the browser** (right-click → *Inspect*) to find the exact selector you need to override.

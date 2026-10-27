@@ -1,0 +1,54 @@
+---
+title: "Ron Stephen Sabilla"
+subtitle: "Digital Marketing Analytics · Creative Media"
+image: images/profile.jpg
+toc: false
+about:
+  template: trestles
+  image-shape: round
+  image-width: 14em
+  links:
+    - icon: github
+      text: GitHub
+      href: https://github.com/rsabilla
+    - icon: envelope
+      text: Email
+      href: mailto:ron.wnrs@gmail.com
+---
+
+Hi, I'm Ron! I'm a graduate student in the **Master of Science in Digital Marketing (MSDM)** program at Cal Poly Pomona. I like working where data and storytelling meet: figuring out what the numbers say, then turning that into content people actually want to watch or read.
+
+Outside of class, I run **LAfirethrifts**, a secondhand clothing store with an anti-fast-fashion mission aimed at high school and college students. I also create video and promo content with Associated Students, Inc. (ASI) at Cal Poly Pomona.
+
+## Career Aspirations
+
+I want to build a career in digital marketing analytics, helping brands and nonprofits make smarter decisions with their data. My goal is to be the person on a team who can set up the tracking, run the analysis, *and* explain the results in a way that leads to action. Long term, I'd love to bring that same data-driven approach to growing my own brand.
+
+## Skills
+
+::: {.card-box}
+**Analytics & Data**<br>
+<span class="skill">SQL</span><span class="skill">Google BigQuery</span><span class="skill">R</span><span class="skill">Machine Learning for Marketing</span><span class="skill">Google Analytics 4</span><span class="skill">Google Tag Manager</span>
+
+**Reporting & Web**<br>
+<span class="skill">Quarto</span><span class="skill">Dashboards</span><span class="skill">HTML / CSS / SCSS</span><span class="skill">GitHub Pages</span>
+
+**Creative & Marketing**<br>
+<span class="skill">Video Production</span><span class="skill">Social Media Content</span><span class="skill">E-commerce</span><span class="skill">Google Ad Grants</span>
+:::
+
+## Education
+
+::: {.card-box}
+**Cal Poly Pomona**, Master of Science in Digital Marketing (MSDM)<br>
+*Fall 2025 – Summer 2027 (expected)*
+
+Relevant coursework: Applied Machine Learning for Marketing (IBM 6540), SQL & BigQuery (IBM 6500)
+:::
+
+<!-- Add your undergraduate degree here, e.g.:
+::: {.card-box}
+**University Name**, B.S. in ...<br>
+*Year*
+:::
+-->

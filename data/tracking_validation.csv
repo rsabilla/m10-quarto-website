@@ -1,0 +1,9 @@
+event,where_verified,key_parameters_checked,status
+page_view,DebugView,"page_location (/volunteer), page_path, page_title, page_referrer",Firing
+user_engagement,DebugView,engagement_time_msec,Firing
+scroll,DebugView,page_location,Firing
+form_start,DebugView,page_location (/contact),Firing
+generate_lead,DebugView + Events (key event),"event_action = Submitted; event_label = Page Name: Contact, Form Name: Contacts 9",Firing (marked as key event)
+qualify_lead,Events (key event),—,Configured; no stream data yet
+close_convert_lead,Events (key event),—,Configured; no stream data yet
+BigQuery export,Product links,—,Not linked yet

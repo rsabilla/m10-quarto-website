@@ -1,0 +1,85 @@
+---
+title: "Listings in Quarto"
+subtitle: "Turning a folder of pages into an automatic portfolio gallery"
+listing:
+  - id: portfolio-grid
+    contents: posts
+    type: grid
+    sort: "date desc"
+    categories: true
+    sort-ui: true
+    filter-ui: true
+    fields: [image, title, description, categories, date]
+    grid-columns: 2
+    image-height: 180px
+page-layout: full
+---
+
+## What Is a Listing?
+
+A **listing** is a Quarto feature that automatically builds a gallery, list, or table from a set of pages. Instead of hand-coding a "Projects" page and updating it every time you finish something, you drop a new `.qmd` file into a folder and Quarto adds it to the listing on the next render.
+
+Each item pulls its **title, date, description, image, and categories** from that page's YAML header.
+
+## How It Works
+
+**1. Put each project in its own folder** with an `index.qmd`:
+
+```{.default filename="Project structure"}
+posts/
+├── sql-portfolio/index.qmd
+├── shopify-channel-analysis/index.qmd
+├── wellness-ranch-cep/index.qmd
+└── campus-video-production/index.qmd
+```
+
+**2. Give each page metadata** in its YAML header:
+
+```{.yaml filename="posts/sql-portfolio/index.qmd"}
+---
+title: "SQL & BigQuery Learning Portfolio"
+description: "Three DataCamp courses documented with marketing-focused SQL examples."
+date: 2026-10-23
+categories: [SQL, BigQuery, GitHub Pages]
+image: thumbnail.png
+---
+```
+
+**3. Add a `listing` block** to the page where the gallery should appear:
+
+```{.yaml filename="listings.qmd"}
+listing:
+  contents: posts
+  type: grid
+  sort: "date desc"
+  categories: true
+  filter-ui: true
+```
+
+## Listing Types
+
+| Type | Looks like | Best for |
+|---|---|---|
+| `default` | Blog-style rows with image + summary | Blogs, articles |
+| `grid` | Cards in columns | **Portfolios**, project galleries |
+| `table` | Sortable table | Course lists, resources, publications |
+
+## My Portfolio as a Grid Listing
+
+Click a category tag to filter, or use the search and sort controls.
+
+::: {#portfolio-grid}
+:::
+
+::: {.callout-tip}
+## Want more than one listing on a page?
+Give each listing an `id` in the YAML (e.g. `id: portfolio-grid`) and place it with a matching empty div: `::: {#portfolio-grid}` … `:::`. You could show recent posts as a grid and older ones as a table on the same page.
+:::
+
+## Using Listings for a Portfolio Website
+
+- **Show your best work first** with `sort: "date desc"` or a custom `order` field.
+- **Categories become filters.** Tag projects by skill (SQL, GA4, Video) so recruiters can jump to what they care about.
+- **Thumbnails sell the project.** Add an `image:` to each post; a chart or screenshot works great.
+- **Low maintenance.** New project = new folder. The gallery updates itself.
+- **RSS feed option.** Add `feed: true` to let people subscribe to new posts.

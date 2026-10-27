@@ -1,0 +1,13 @@
+---
+title: "Traffic Source & AOV Analysis"
+description: "IBM 6540 group project analyzing 60,000 Shopify orders to see how traffic channels affect average order value."
+date: 2026-09-10
+categories: [R, Machine Learning, E-commerce]
+image: thumbnail.png
+---
+
+For our IBM 6540 (Applied Machine Learning for Marketing) group project, our five-person team analyzed a 60,000-row Shopify sales dataset. I owned **RO1: traffic source and average order value (AOV)** and wrote the conclusion slides.
+
+**Finding:** No statistically significant overall difference in AOV between channels, but meaningful **channel × category interaction effects**. Some channels performed better for specific product categories.
+
+**Tools:** R, recipes, rsample, glmnet, Quarto revealjs

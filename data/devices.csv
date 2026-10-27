@@ -1,0 +1,4 @@
+device,active_users,new_users,engaged_sessions,engagement_rate,engaged_sessions_per_user,avg_engagement_sec,event_count
+Mobile,669,666,552,71.88,0.83,38,4531
+Desktop,88,86,73,61.86,0.83,79,804
+Tablet,8,8,8,53.33,1.00,50,70

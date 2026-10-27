@@ -1,0 +1,61 @@
+/*-- scss:defaults --*/
+// Brand colors (Cal Poly Pomona green + gold accent)
+$brand-green: #1E4D2B;
+$brand-gold:  #FFB81C;
+$brand-ink:   #1F2933;
+
+$primary:  $brand-green;
+$link-color: #2E7D4F;
+$body-color: $brand-ink;
+$font-family-sans-serif: "Inter", system-ui, -apple-system, "Segoe UI", sans-serif;
+$headings-font-weight: 700;
+$navbar-fg: #FFFFFF;
+$footer-bg: #F4F6F5;
+
+/*-- scss:rules --*/
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap");
+
+h1, h2 { letter-spacing: -0.01em; }
+h2 {
+  border-bottom: 3px solid $brand-gold;
+  padding-bottom: .3rem;
+  margin-top: 2rem;
+}
+
+// Reusable card style used across pages
+.card-box {
+  border: 1px solid #E3E8E5;
+  border-radius: 12px;
+  padding: 1.1rem 1.3rem;
+  margin-bottom: 1rem;
+  background: #FFFFFF;
+  box-shadow: 0 2px 8px rgba(30, 77, 43, .06);
+  transition: transform .15s ease, box-shadow .15s ease;
+  &:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 6px 16px rgba(30, 77, 43, .12);
+  }
+}
+
+// Skill "pills" on the home page
+.skill {
+  display: inline-block;
+  background: rgba($brand-green, .08);
+  color: $brand-green;
+  border-radius: 999px;
+  padding: .2rem .75rem;
+  margin: .2rem .15rem;
+  font-size: .9rem;
+  font-weight: 600;
+}
+
+// Highlighted demo box on the CSS page
+.demo-highlight {
+  background: linear-gradient(135deg, $brand-green, lighten($brand-green, 15%));
+  color: #FFFFFF;
+  border-left: 6px solid $brand-gold;
+  border-radius: 10px;
+  padding: 1rem 1.25rem;
+}
+
+.about-entity img { border: 4px solid $brand-gold; }
