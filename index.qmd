@@ -1,28 +1,73 @@
 ---
 title: "Ron Stephen Sabilla"
-subtitle: "Digital Marketing Analytics · Creative Media"
-image: images/profile.jpg
-toc: false
-about:
-  template: trestles
-  image-shape: round
-  image-width: 14em
-  links:
-    - icon: github
-      text: GitHub
-      href: https://github.com/rsabilla
-    - icon: envelope
-      text: Email
-      href: mailto:ron.wnrs@gmail.com
+subtitle: "MSDM graduate student at Cal Poly Pomona · Digital marketing analytics & creative media"
+image: images/ron-headshot.jpg
 ---
 
+::: {.grid}
+
+::: {.g-col-12 .g-col-md-4}
+![](images/ron-headshot.jpg){.profile-photo fig-alt="Ron Stephen Sabilla in Cal Poly Pomona graduation regalia"}
+
+::: {.text-center}
+[<i class="bi bi-github"></i> GitHub](https://github.com/rsabilla){.btn .btn-outline-primary .btn-sm}
+[<i class="bi bi-envelope"></i> Email](mailto:ron.wnrs@gmail.com){.btn .btn-outline-primary .btn-sm}
+:::
+:::
+
+::: {.g-col-12 .g-col-md-8}
 Hi, I'm Ron! I'm a graduate student in the **Master of Science in Digital Marketing (MSDM)** program at Cal Poly Pomona. I like working where data and storytelling meet: figuring out what the numbers say, then turning that into content people actually want to watch or read.
 
-Outside of class, I run **LAfirethrifts**, a secondhand clothing store with an anti-fast-fashion mission aimed at high school and college students. I also create video and promo content with Associated Students, Inc. (ASI) at Cal Poly Pomona.
+Right now I'm on an MSDM capstone team helping a real nonprofit client, **Wellness Ranch Therapy**, use their website data to reach more people. I also create video and promo content with Associated Students, Inc. (ASI) at Cal Poly Pomona.
+:::
+
+:::
+
+## Current Capstone: Wellness Ranch Therapy
+
+[Wellness Ranch Therapy](https://www.wellnessranchtherapy.org) is a nonprofit in Rancho Cucamonga that offers equine-assisted therapy. Our team is helping them grow their reach and donations through **website & SEO improvements, GA4 analytics, and Google Ad Grants**. Here's what I'm working on:
+
+::: {.grid}
+
+::: {.g-col-12 .g-col-md-6}
+::: {.card-box}
+**📊 GA4 tracking validation**
+
+Verified the site's events in GA4 DebugView, including `page_view`, `scroll`, `form_start`, and the `generate_lead` key event that fires when someone submits the Contact form.
+:::
+:::
+
+::: {.g-col-12 .g-col-md-6}
+::: {.card-box}
+**🔎 Baseline traffic analysis**
+
+In the first weeks of tracking, the site had **902 sessions** from **764 users**. **52% came from Instagram**, and **88% were on mobile**.
+:::
+:::
+
+::: {.g-col-12 .g-col-md-6}
+::: {.card-box}
+**📄 Content insights**
+
+The homepage gets half of all views but only **12 seconds** of engagement, while the Volunteer and Therapy pages hold visitors the longest.
+:::
+:::
+
+::: {.g-col-12 .g-col-md-6}
+::: {.card-box}
+**🎯 Google Ad Grants (AO4)**
+
+After launch, I'll analyze the Ad Grants campaign to improve click-through and conversion rates while keeping the grant compliant.
+:::
+:::
+
+:::
+
+[See the full GA4 dashboard →](dashboard.qmd){.btn .btn-primary}
 
 ## Career Aspirations
 
-I want to build a career in digital marketing analytics, helping brands and nonprofits make smarter decisions with their data. My goal is to be the person on a team who can set up the tracking, run the analysis, *and* explain the results in a way that leads to action. Long term, I'd love to bring that same data-driven approach to growing my own brand.
+I want to build a career in digital marketing analytics, helping brands and nonprofits make smarter decisions with their data. My goal is to be the person on a team who can set up the tracking, run the analysis, *and* explain the results in a way that leads to action. Long term, I'd love to help mission-driven organizations use their data to reach more of the people they serve.
 
 ## Skills
 
@@ -34,7 +79,7 @@ I want to build a career in digital marketing analytics, helping brands and nonp
 <span class="skill">Quarto</span><span class="skill">Dashboards</span><span class="skill">HTML / CSS / SCSS</span><span class="skill">GitHub Pages</span>
 
 **Creative & Marketing**<br>
-<span class="skill">Video Production</span><span class="skill">Social Media Content</span><span class="skill">E-commerce</span><span class="skill">Google Ad Grants</span>
+<span class="skill">Video Production</span><span class="skill">Social Media Content</span><span class="skill">Google Ad Grants</span><span class="skill">Nonprofit Marketing</span>
 :::
 
 ## Education
@@ -48,7 +93,7 @@ Relevant coursework: Applied Machine Learning for Marketing (IBM 6540), SQL & Bi
 
 <!-- Add your undergraduate degree here, e.g.:
 ::: {.card-box}
-**University Name**, B.S. in ...<br>
+**Cal Poly Pomona**, B.S. in ..., College of Business Administration<br>
 *Year*
 :::
 -->

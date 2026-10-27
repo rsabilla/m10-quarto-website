@@ -60,21 +60,28 @@
     "href": "index.html",
     "title": "Ron Stephen Sabilla",
     "section": "",
-    "text": "Hi, I’m Ron! I’m a graduate student in the Master of Science in Digital Marketing (MSDM) program at Cal Poly Pomona. I like working where data and storytelling meet: figuring out what the numbers say, then turning that into content people actually want to watch or read.\nOutside of class, I run LAfirethrifts, a secondhand clothing store with an anti-fast-fashion mission aimed at high school and college students. I also create video and promo content with Associated Students, Inc. (ASI) at Cal Poly Pomona."
+    "text": "GitHub  Email\n\n\n\nHi, I’m Ron! I’m a graduate student in the Master of Science in Digital Marketing (MSDM) program at Cal Poly Pomona. I like working where data and storytelling meet: figuring out what the numbers say, then turning that into content people actually want to watch or read.\nRight now I’m on an MSDM capstone team helping a real nonprofit client, Wellness Ranch Therapy, use their website data to reach more people. I also create video and promo content with Associated Students, Inc. (ASI) at Cal Poly Pomona."
+  },
+  {
+    "objectID": "index.html#current-capstone-wellness-ranch-therapy",
+    "href": "index.html#current-capstone-wellness-ranch-therapy",
+    "title": "Ron Stephen Sabilla",
+    "section": "Current Capstone: Wellness Ranch Therapy",
+    "text": "Current Capstone: Wellness Ranch Therapy\nWellness Ranch Therapy is a nonprofit in Rancho Cucamonga that offers equine-assisted therapy. Our team is helping them grow their reach and donations through website & SEO improvements, GA4 analytics, and Google Ad Grants. Here’s what I’m working on:\n\n\n\n📊 GA4 tracking validation\nVerified the site’s events in GA4 DebugView, including page_view, scroll, form_start, and the generate_lead key event that fires when someone submits the Contact form.\n\n\n\n\n🔎 Baseline traffic analysis\nIn the first weeks of tracking, the site had 902 sessions from 764 users. 52% came from Instagram, and 88% were on mobile.\n\n\n\n\n📄 Content insights\nThe homepage gets half of all views but only 12 seconds of engagement, while the Volunteer and Therapy pages hold visitors the longest.\n\n\n\n\n🎯 Google Ad Grants (AO4)\nAfter launch, I’ll analyze the Ad Grants campaign to improve click-through and conversion rates while keeping the grant compliant.\n\n\n\nSee the full GA4 dashboard →"
   },
   {
     "objectID": "index.html#career-aspirations",
     "href": "index.html#career-aspirations",
     "title": "Ron Stephen Sabilla",
     "section": "Career Aspirations",
-    "text": "Career Aspirations\nI want to build a career in digital marketing analytics, helping brands and nonprofits make smarter decisions with their data. My goal is to be the person on a team who can set up the tracking, run the analysis, and explain the results in a way that leads to action. Long term, I’d love to bring that same data-driven approach to growing my own brand."
+    "text": "Career Aspirations\nI want to build a career in digital marketing analytics, helping brands and nonprofits make smarter decisions with their data. My goal is to be the person on a team who can set up the tracking, run the analysis, and explain the results in a way that leads to action. Long term, I’d love to help mission-driven organizations use their data to reach more of the people they serve."
   },
   {
     "objectID": "index.html#skills",
     "href": "index.html#skills",
     "title": "Ron Stephen Sabilla",
     "section": "Skills",
-    "text": "Skills\n\nAnalytics & Data SQLGoogle BigQueryRMachine Learning for MarketingGoogle Analytics 4Google Tag Manager\nReporting & Web QuartoDashboardsHTML / CSS / SCSSGitHub Pages\nCreative & Marketing Video ProductionSocial Media ContentE-commerceGoogle Ad Grants"
+    "text": "Skills\n\nAnalytics & Data SQLGoogle BigQueryRMachine Learning for MarketingGoogle Analytics 4Google Tag Manager\nReporting & Web QuartoDashboardsHTML / CSS / SCSSGitHub Pages\nCreative & Marketing Video ProductionSocial Media ContentGoogle Ad GrantsNonprofit Marketing"
   },
   {
     "objectID": "index.html#education",
