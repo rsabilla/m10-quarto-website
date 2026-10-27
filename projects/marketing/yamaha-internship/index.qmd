@@ -1,0 +1,55 @@
+---
+title: "Drums & Percussion Marketing at Yamaha"
+description: "Brochure design, SEO landing-page edits, competitive pricing analysis, Amazon listing optimization, and DCI Championship social content."
+date: 2025-10-01
+categories: [Brand Development, Market Positioning, SEO, E-commerce, Content Strategy]
+image: thumbnail.png
+---
+
+## Role
+
+**Drums and Percussion Marketing Intern**, Yamaha Corporation of America · Buena Park, CA · *April 2025 – October 2025*
+
+## Highlights
+
+::: {.grid}
+
+::: {.g-col-12 .g-col-md-6}
+::: {.card-box}
+**📘 Targeted brochure**
+
+Created a percussion brochure featuring Yamaha products for musicians from middle school through college, supporting brand outreach and educational engagement.
+:::
+:::
+
+::: {.g-col-12 .g-col-md-6}
+::: {.card-box}
+**🔍 SEO & web content**
+
+Edited landing pages, infographics, and blog content to improve SEO, user experience, and brand consistency across web and eCommerce platforms.
+:::
+:::
+
+::: {.g-col-12 .g-col-md-6}
+::: {.card-box}
+**💲 Competitive pricing analysis**
+
+Compared Yamaha's pricing against key competitors in Excel to evaluate market positioning and inform marketing decisions.
+:::
+:::
+
+::: {.g-col-12 .g-col-md-6}
+::: {.card-box}
+**🛒 Amazon listing optimization**
+
+Improved product descriptions and visuals for the drum and percussion lines to boost clarity, engagement, and conversion.
+:::
+:::
+
+:::
+
+## Social Campaign: DCI Championship Week
+
+Led social media content planning for **Drum Corps International Championship Week**: collected content, wrote captions, and scheduled posts with the social media team, using Excel to manage the calendar and track engagement.
+
+**Skills:** brand development, market positioning, SEO, eCommerce, copywriting, Excel

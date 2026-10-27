@@ -1,0 +1,56 @@
+---
+title: "Social Media & Content for Associated Students, Inc."
+description: "Reels, short-form video, captions, and campaigns for @asicpp (15.6K followers) and @cppcampusrec (5.5K followers) at Cal Poly Pomona."
+date: 2026-09-30
+categories: [Social Media, Video Production, Content Strategy, Creative]
+image: thumbnail.png
+---
+
+## Role
+
+**Social Media & Marketing Assistant**, Associated Students, Inc. (ASI) at Cal Poly Pomona · *May 2026 – Present*
+
+## What I Do
+
+::: {.grid}
+
+::: {.g-col-12 .g-col-md-6}
+::: {.card-box}
+**🎬 Content creation**
+
+Written, graphic, and video content across Instagram, TikTok, and other platforms, including Reels and short-form video for **@asicpp (15.6K followers)** and **@cppcampusrec (5.5K followers)**.
+:::
+:::
+
+::: {.g-col-12 .g-col-md-6}
+::: {.card-box}
+**📅 Planning & publishing**
+
+Plan content calendars in Monday.com and schedule posts in Hootsuite to keep both accounts consistent.
+:::
+:::
+
+::: {.g-col-12 .g-col-md-6}
+::: {.card-box}
+**📊 Performance reporting**
+
+Use Hootsuite analytics to track post performance, audience growth, and engagement, and turn them into reports that shape the next round of content.
+:::
+:::
+
+::: {.g-col-12 .g-col-md-6}
+::: {.card-box}
+**✍️ Copy & live coverage**
+
+Write captions, newsletters, and flyers following ASI's writing style guide, and cover campus and virtual events live.
+:::
+:::
+
+:::
+
+## Featured Projects
+
+- **Campus Rec Try-a-Tri:** promo and info video for a beginner triathlon event
+- **Bronco Fusion:** promotional video for a campus event
+
+**Tools:** Hootsuite, Monday.com, Canva, CapCut

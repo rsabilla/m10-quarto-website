@@ -1,0 +1,27 @@
+---
+title: "Growing the Ontario Jr Reign on Social"
+description: "Social content strategy across TikTok, Instagram, Facebook, and X that grew the team's combined following by 273.94%."
+date: 2025-03-01
+categories: [Social Media, Content Strategy, Video Production, Sports Marketing]
+image: thumbnail.png
+---
+
+## Role
+
+**Social Media Marketing Intern**, Ontario Jr Reign · Ontario, CA · *June 2024 – March 2025*
+
+## Result
+
+::: {.card-box}
+### 📈 273.94% growth
+in combined audience following across TikTok, Instagram, Facebook, and X
+:::
+
+## How
+
+- **Platform-specific content:** developed and executed posts tailored to each of the four platforms
+- **Short-form video:** edited dynamic video in CapCut to maximize viewer engagement
+- **Consistent publishing:** managed all channels in Buffer to keep the team visible all season
+- **Business impact:** content increased team visibility and supported ticket sales throughout the season
+
+**Tools:** Buffer, CapCut, Canva

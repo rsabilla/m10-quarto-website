@@ -18,52 +18,58 @@ image: images/ron-headshot.jpg
 ::: {.g-col-12 .g-col-md-8}
 Hi, I'm Ron! I'm a graduate student in the **Master of Science in Digital Marketing (MSDM)** program at Cal Poly Pomona. I like working where data and storytelling meet: figuring out what the numbers say, then turning that into content people actually want to watch or read.
 
-Right now I'm on an MSDM capstone team helping a real nonprofit client, **Wellness Ranch Therapy**, use their website data to reach more people. I also create video and promo content with Associated Students, Inc. (ASI) at Cal Poly Pomona.
+I work as a **Social Media & Marketing Assistant at Associated Students, Inc. (ASI)**, creating content for accounts with 20K+ combined followers, and I've interned in marketing at **Yamaha Corporation of America** and the **Ontario Jr Reign**. Right now I'm also on an MSDM capstone team helping a nonprofit client, **Wellness Ranch Therapy**, use its website data to reach more supporters.
 :::
 
 :::
+
+## Personal Statement
+
+I got into marketing through content: making videos, posts, and promo pieces that people actually stop and watch, from growing a junior hockey team's social following to producing Reels for campus programs. Graduate school showed me the other half of the job. Good content is only as useful as your ability to prove what it did. Now I like working on both sides: setting up the tracking, finding what the data says, and turning it into the next piece of content or the next decision.
+
+I'm especially drawn to mission-driven work. Helping a small nonprofit figure out which visitors turn into supporters has shown me how much a clear analysis can matter when time and budget are tight. I'm looking for a role in digital marketing analytics where I can keep connecting the creative and the measurable.
 
 ## Current Capstone: Wellness Ranch Therapy
 
-[Wellness Ranch Therapy](https://www.wellnessranchtherapy.org) is a nonprofit in Rancho Cucamonga that offers equine-assisted therapy. Our team is helping them grow their reach and donations through **website & SEO improvements, GA4 analytics, and Google Ad Grants**. Here's what I'm working on:
+[Wellness Ranch Therapy](https://www.wellnessranchtherapy.org) is a nonprofit in Rancho Cucamonga that offers equine-assisted therapy. Our team is helping them grow their reach and donations through **website & SEO improvements, GA4 analytics, Google Ad Grants, and donor outreach**. Here's my part:
 
 ::: {.grid}
 
 ::: {.g-col-12 .g-col-md-6}
 ::: {.card-box}
-**📊 GA4 tracking validation**
+**📊 Measurement setup**
 
-Verified the site's events in GA4 DebugView, including `page_view`, `scroll`, `form_start`, and the `generate_lead` key event that fires when someone submits the Contact form.
+Helped set up and validate GA4 tracking so the organization can see which visits lead to inquiries, not just page views.
 :::
 :::
 
 ::: {.g-col-12 .g-col-md-6}
 ::: {.card-box}
-**🔎 Baseline traffic analysis**
+**🔎 Baseline insights**
 
-In the first weeks of tracking, the site had **902 sessions** from **764 users**. **52% came from Instagram**, and **88% were on mobile**.
+Early data showed **about half of visitors come from Instagram** and **nearly 9 in 10 browse on mobile**, which points to a social-first, mobile-first strategy.
 :::
 :::
 
 ::: {.g-col-12 .g-col-md-6}
 ::: {.card-box}
-**📄 Content insights**
+**📄 Content opportunities**
 
-The homepage gets half of all views but only **12 seconds** of engagement, while the Volunteer and Therapy pages hold visitors the longest.
+The homepage draws the most visits but the shortest attention, so it's the first place to add impact stats and a clear way to give.
 :::
 :::
 
 ::: {.g-col-12 .g-col-md-6}
 ::: {.card-box}
-**🎯 Google Ad Grants (AO4)**
+**💚 Donor outreach (my AO4)**
 
-After launch, I'll analyze the Ad Grants campaign to improve click-through and conversion rates while keeping the grant compliant.
+Leading donor-focused content, impact storytelling, and UTM-tracked outreach campaigns, then measuring their effect on donations.
 :::
 :::
 
 :::
 
-[See the full GA4 dashboard →](dashboard.qmd){.btn .btn-primary}
+[See my analysis deck →](projects/analytics/followers-to-donors/index.qmd){.btn .btn-primary}
 
 ## Career Aspirations
 
@@ -79,21 +85,22 @@ I want to build a career in digital marketing analytics, helping brands and nonp
 <span class="skill">Quarto</span><span class="skill">Dashboards</span><span class="skill">HTML / CSS / SCSS</span><span class="skill">GitHub Pages</span>
 
 **Creative & Marketing**<br>
-<span class="skill">Video Production</span><span class="skill">Social Media Content</span><span class="skill">Google Ad Grants</span><span class="skill">Nonprofit Marketing</span>
+<span class="skill">Social Media Strategy</span><span class="skill">Short-form Video & Reels</span><span class="skill">Copywriting</span><span class="skill">SEO</span><span class="skill">Content Calendars</span><span class="skill">Competitive Analysis</span>
+
+**Tools**<br>
+<span class="skill">Hootsuite</span><span class="skill">Buffer</span><span class="skill">Monday.com</span><span class="skill">Canva</span><span class="skill">CapCut</span><span class="skill">Semrush</span><span class="skill">Microsoft 365</span><span class="skill">Google Workspace</span>
 :::
 
 ## Education
 
 ::: {.card-box}
-**Cal Poly Pomona**, Master of Science in Digital Marketing (MSDM)<br>
-*Fall 2025 – Summer 2027 (expected)*
+**California State Polytechnic University, Pomona**, Master of Science in Digital Marketing<br>
+*Expected May 2027*
 
 Relevant coursework: Applied Machine Learning for Marketing (IBM 6540), SQL & BigQuery (IBM 6500)
 :::
 
-<!-- Add your undergraduate degree here, e.g.:
 ::: {.card-box}
-**Cal Poly Pomona**, B.S. in ..., College of Business Administration<br>
-*Year*
+**California State Polytechnic University, Pomona**, Bachelor of Science in Business Administration: Marketing<br>
+*May 2024*
 :::
--->

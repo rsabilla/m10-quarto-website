@@ -1,0 +1,61 @@
+---
+title: "Donor Outreach Strategy for a Nonprofit Client"
+description: "MSDM capstone (AO4): donor-focused content, impact storytelling, and outreach campaigns to increase donations for Wellness Ranch Therapy."
+date: 2026-10-26
+categories: [Marketing Strategy, Content Marketing, Nonprofit, CEP]
+image: thumbnail.png
+---
+
+## The Challenge
+
+**Wellness Ranch Therapy** is a nonprofit in Rancho Cucamonga offering equine-assisted therapy. Donations are its top-priority website outcome because they help fund accessible, sliding-scale care. Early GA4 data showed that supporters are arriving, especially from Instagram, but few of them reach the donation pathway, and the homepage, where most visits start, holds attention only briefly.
+
+## My Role: AO4, Content Marketing & Donor Outreach
+
+I own the capstone's fourth analytics objective: develop donor-focused content and outreach campaigns, then measure whether they move people toward giving.
+
+::: {.grid}
+
+::: {.g-col-12 .g-col-md-6}
+::: {.card-box}
+**🎯 Positioning**
+
+Community-based, experiential mental-health support. Messaging leads with the horses, the community, and the real need for accessible care in the Inland Empire.
+:::
+:::
+
+::: {.g-col-12 .g-col-md-6}
+::: {.card-box}
+**💬 Content strategy**
+
+Built around research on why people give: awareness of need, a clear ask, and proof that a gift makes a difference (Bekkers & Wiepking, 2011).
+:::
+:::
+
+::: {.g-col-12 .g-col-md-6}
+::: {.card-box}
+**📖 Ethical storytelling**
+
+Stories center on horses, staff, volunteers, and approved, de-identified outcomes, never identifiable clients without consent.
+:::
+:::
+
+::: {.g-col-12 .g-col-md-6}
+::: {.card-box}
+**📈 Measurement**
+
+Every campaign link is UTM-tagged so GA4 can tie donation-page visits back to the specific post, email, or channel.
+:::
+:::
+
+:::
+
+## Plan
+
+| Phase | Timing | Work |
+|---|---|---|
+| Audit & baseline | Fall 2026 | Inventory donor content, code social posts (information / community / action), map the donor journey, record the baseline |
+| Build & launch | Spring 2027 | Homepage impact stats, donor stories, social and email campaign |
+| Evaluate | Spring–Summer 2027 | Pre/post comparison, channel and content comparison, message tests |
+
+**Skills:** marketing strategy, content planning, nonprofit fundraising, brand messaging, campaign measurement

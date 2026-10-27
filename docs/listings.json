@@ -1,11 +1,20 @@
 [
   {
-    "listing": "/listings.html",
+    "listing": "/digital-marketing.html",
     "items": [
-      "/posts/sql-portfolio/index.html",
-      "/posts/wellness-ranch-cep/index.html",
-      "/posts/campus-video-production/index.html",
-      "/posts/shopify-channel-analysis/index.html"
+      "/projects/marketing/personal-brand/index.html",
+      "/projects/marketing/cep-donor-outreach/index.html",
+      "/projects/marketing/asi-social-media/index.html",
+      "/projects/marketing/yamaha-internship/index.html",
+      "/projects/marketing/jr-reign-social/index.html"
+    ]
+  },
+  {
+    "listing": "/analytics.html",
+    "items": [
+      "/projects/analytics/followers-to-donors/index.html",
+      "/projects/analytics/sql-portfolio/index.html",
+      "/projects/analytics/shopify-channel-analysis/index.html"
     ]
   }
 ]

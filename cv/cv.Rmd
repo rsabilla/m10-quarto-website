@@ -1,0 +1,92 @@
+---
+name: Ron Stephen
+surname: Sabilla
+position: "Digital Marketing · Social Media · Marketing Analytics"
+address: "Pomona, California"
+email: "ronsabilla@gmail.com"
+linkedin: ronstephensabilla
+github: rsabilla
+date: "`r format(Sys.time(), '%B %Y')`"
+aboutme: "Results-driven marketing professional with experience in social media management, content development, and marketing analytics. Skilled in using digital platforms to build brand visibility, engage target audiences, and support growth through data-informed decisions."
+headcolor: "1E4D2B"
+output: vitae::awesomecv
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = FALSE, warning = FALSE, message = FALSE)
+library(vitae)
+library(tibble)
+```
+
+# Education
+
+```{r}
+tribble(
+  ~degree, ~uni, ~loc, ~dates,
+  "Master of Science in Digital Marketing", "California State Polytechnic University, Pomona", "Pomona, CA", "May 2027",
+  "Bachelor of Science in Business Administration: Marketing", "California State Polytechnic University, Pomona", "Pomona, CA", "May 2024"
+) |>
+  detailed_entries(what = degree, when = dates, with = uni, where = loc)
+```
+
+# Work Experience
+
+```{r}
+tribble(
+  ~role, ~org, ~loc, ~dates, ~detail,
+  "Social Media & Marketing Assistant", "Associated Students Inc., Cal Poly Pomona", "Pomona, CA", "May 2026 – Present",
+    "Created written, graphic, and video content across Instagram, TikTok, and other platforms, including Reels and short-form video for @asicpp (15.6K followers) and @cppcampusrec (5.5K followers).",
+  "Social Media & Marketing Assistant", "Associated Students Inc., Cal Poly Pomona", "Pomona, CA", "May 2026 – Present",
+    "Scheduled and published content in Hootsuite and used its analytics to track post performance, audience growth, and engagement.",
+  "Social Media & Marketing Assistant", "Associated Students Inc., Cal Poly Pomona", "Pomona, CA", "May 2026 – Present",
+    "Provided live social media coverage at on-campus and virtual events, increasing audience interaction and brand visibility.",
+  "Social Media & Marketing Assistant", "Associated Students Inc., Cal Poly Pomona", "Pomona, CA", "May 2026 – Present",
+    "Planned content calendars in Monday.com and helped develop campaigns that drove engagement and traffic to ASI websites.",
+  "Social Media & Marketing Assistant", "Associated Students Inc., Cal Poly Pomona", "Pomona, CA", "May 2026 – Present",
+    "Prepared performance reports from Hootsuite analytics and wrote copy for newsletters, flyers, and digital publications following ASI's style guidelines.",
+
+  "Drums and Percussion Marketing Intern", "Yamaha Corporation of America", "Buena Park, CA", "April 2025 – Oct 2025",
+    "Created a targeted percussion brochure for musicians from middle school to collegiate levels, supporting brand outreach and educational engagement.",
+  "Drums and Percussion Marketing Intern", "Yamaha Corporation of America", "Buena Park, CA", "April 2025 – Oct 2025",
+    "Edited landing pages, infographics, and blog content to improve SEO, user experience, and brand consistency across web and eCommerce platforms.",
+  "Drums and Percussion Marketing Intern", "Yamaha Corporation of America", "Buena Park, CA", "April 2025 – Oct 2025",
+    "Conducted competitive pricing analysis in Excel to evaluate market positioning against key competitors.",
+  "Drums and Percussion Marketing Intern", "Yamaha Corporation of America", "Buena Park, CA", "April 2025 – Oct 2025",
+    "Optimized Amazon product listings for drum and percussion lines to improve clarity, engagement, and conversion.",
+  "Drums and Percussion Marketing Intern", "Yamaha Corporation of America", "Buena Park, CA", "April 2025 – Oct 2025",
+    "Led social content planning for Drum Corps International Championship Week, including content collection, captions, and scheduling.",
+
+  "Social Media Marketing Intern", "Ontario Jr Reign", "Ontario, CA", "Jun 2024 – March 2025",
+    "Developed and executed content across TikTok, Instagram, Facebook, and X, driving 273.94% growth in combined audience following.",
+  "Social Media Marketing Intern", "Ontario Jr Reign", "Ontario, CA", "Jun 2024 – March 2025",
+    "Edited video content in CapCut and managed all channels in Buffer to increase team visibility and support ticket sales."
+) |>
+  detailed_entries(what = role, when = dates, with = org, where = loc, why = detail)
+```
+
+# Projects
+
+```{r}
+tribble(
+  ~title, ~org, ~dates, ~detail,
+  "Nonprofit Digital Marketing Capstone", "MSDM Culminating Experience Project", "2026 – 2027",
+    "Leading donor-focused content and UTM-tracked outreach campaigns for a nonprofit client; helped set up and validate GA4 tracking.",
+  "From Followers to Donors (GA4 Analysis)", "Quarto Revealjs Presentation", "2026",
+    "Used chi-square and Fisher's exact tests in R to show which traffic sources bring the most engaged visitors.",
+  "Traffic Source & AOV Analysis", "Applied Machine Learning for Marketing", "2026",
+    "Analyzed 60,000 Shopify orders in R and identified channel × category effects on average order value."
+) |>
+  detailed_entries(what = title, when = dates, with = org, why = detail)
+```
+
+# Skills
+
+```{r}
+tribble(
+  ~area, ~skills,
+  "Marketing", "Social media strategy, short-form video, copywriting, SEO, content calendars, competitive analysis",
+  "Analytics", "Google Analytics 4, Google Tag Manager, Search Console, BigQuery, SQL, R, Quarto, Excel",
+  "Software", "Microsoft 365, CapCut, Canva, Buffer, Hootsuite, Monday.com, Semrush, Google Workspace, Egnyte"
+) |>
+  brief_entries(what = area, with = skills)
+```

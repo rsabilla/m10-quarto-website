@@ -1,0 +1,99 @@
+---
+title: "Portfolio Website Project Proposal"
+subtitle: "Revealjs Presentation Project · From Followers to Donors"
+author: "Ron Stephen Sabilla"
+date: today
+format:
+  html:
+    theme: [cosmo, custom.scss]
+    toc: true
+    toc-title: "Contents"
+    number-sections: true
+    embed-resources: true
+---
+
+## Project Overview
+
+My portfolio website is built in Quarto and organized into the tabs the assignment requires. This proposal focuses on the **Revealjs presentation project**, which will live under the Marketing Analytics Projects tab.
+
+| Tab | What it shows | Status |
+|---|---|---|
+| **Home** | Introduction and personal statement | Built |
+| **Digital Marketing Projects** | ASI social media, Yamaha marketing internship, Ontario Jr Reign social growth, nonprofit donor outreach, and personal brand site | Built, adding projects |
+| **Marketing Analytics Projects** | Blog-style case studies: Shopify channel analysis, SQL/BigQuery portfolio, and **this Revealjs presentation** | Built, presentation in progress |
+| **Website Analytics** | GA4 → Search Console → BigQuery → Looker Studio report on my own site's traffic | Set up in progress, data collecting |
+| **Resume** | CV built with Markdown and the `vitae` package | In progress |
+
+## Project Title
+
+**From Followers to Donors: What a Nonprofit's First Month of GA4 Data Says About Channel Quality**
+
+## Data and Source
+
+- **Source:** Google Analytics 4 property for my MSDM Culminating Experience Project (CEP) client, a nonprofit equine-assisted therapy organization in Southern California.
+- **Period:** September 18 – October 15, 2026, covering the first weeks after tracking went live (data begins around October 7).
+- **Reports used:** Traffic acquisition (session source/medium and campaign), Pages and screens, Tech details (device category), and Admin → Events / DebugView for tracking validation.
+- **Size:** 902 sessions, 764 active users, 1,674 page views, and 5,405 events.
+- **Key fields:** sessions, engaged sessions, engagement rate, average engagement time, events per session, views, active users, and device category.
+- **Privacy:** The data are aggregated and contain no personal information. Before publishing, I will confirm with the client and faculty mentor whether the organization can be named. If not, it will be presented as "a Southern California equine-therapy nonprofit."
+
+As the capstone continues, the dataset will be refreshed with later GA4 exports so the presentation can compare the baseline with results after website and donor-outreach changes.
+
+## Managerial Problem
+
+Donations are the client's top-priority website outcome because they help pay for accessible, sliding-scale care. The organization has very limited staff time for marketing, so it needs to know where to focus.
+
+The first month of GA4 data shows a mismatch:
+
+- **Instagram brings the most visitors** (52% of sessions), but those visits average only 26 seconds.
+- **The homepage gets half of all views** but holds visitors for only 12 seconds.
+- **No donation-related page appears in the top 10 pages.**
+- **Zero key events have been recorded in reports** so far. The `generate_lead` event was only just validated, and completed donations are not yet tracked.
+
+The organization can see *how much* traffic it gets, but not *which* traffic is worth investing in or why visitors are not reaching the donation pathway.
+
+## Target Audience
+
+- **Primary:** The nonprofit's Executive Director, who decides where limited staff time and marketing effort should go.
+- **Secondary:** My CEP team and faculty mentor, who will use the findings to guide website, Ad Grants, and donor-outreach work. Recruiters viewing my portfolio are also an audience, since the project shows an end-to-end analytics workflow.
+
+## Research Questions
+
+1. **Channel quality:** Does engagement rate differ significantly across the main traffic sources (Instagram, Google organic, and direct)?
+2. **Content attention:** Which pages draw views but fail to hold attention, and how far is the donation pathway from where visitors land?
+3. **Device:** Does engagement differ by device, and what does that mean for a site where most users are on mobile?
+4. **Tracking readiness:** Which events and key events are reliably measured, and what gaps prevent the organization from tracking donations?
+5. **Priority:** Based on these results, which channel and pages should the organization prioritize for donor outreach?
+
+## Expected Impact
+
+- **Better use of limited staff time:** Shows which channels bring engaged visitors, so the team can focus on them instead of spreading effort evenly.
+- **Clear direction for the homepage redesign:** Identifies the homepage's 12-second average engagement and the missing donation pathway as the highest-value fixes.
+- **Donor outreach strategy:** Supports my capstone AO4 (Content Marketing & Donor Outreach) by showing where supporters already engage, especially Instagram and the Community Events and Volunteer pages.
+- **A measurable baseline:** Creates the "before" picture that later campaigns, website changes, and the Google Ad Grants launch can be compared against.
+- **Tracking roadmap:** Documents which conversions are working and which still need setup, such as donation tracking.
+
+## Methods
+
+The project will follow the standard analytics workflow: **import → clean → transform → analyze → visualize → communicate**, all in R and Quarto.
+
+| Step | Method | Purpose |
+|---|---|---|
+| Data preparation | Export GA4 reports to CSV; clean and reshape with `dplyr` and `tidyr` | Build tidy tables by source, page, and device |
+| Descriptive analysis | KPIs, shares, rates, and rankings | Summarize traffic, engagement, and content performance |
+| Hypothesis test (RQ1, RQ3) | **Chi-square test of independence** on engaged vs. non-engaged sessions by source and by device | Test whether engagement differs by channel and device |
+| Pairwise comparison | **Two-proportion z-tests** with Bonferroni correction | Identify which specific channels differ |
+| Content gap analysis (RQ2) | Compare each page's share of views with its average engagement time (quadrant chart) | Find pages that attract traffic but lose attention |
+| Tracking audit (RQ4) | Event validation table from DebugView and Admin | Show which outcomes can be measured |
+| Visualization | `ggplot2` and `plotly` charts | Make findings clear for a non-technical director |
+| Communication | **Quarto Revealjs** slide deck with speaker notes, published on the website | Present insights and recommendations |
+
+**Preliminary result (RQ1):** A chi-square test on the first month's data already shows a significant difference in engagement rate by source (χ² = 22.96, df = 2, *p* < .001). Instagram sessions had a 76.1% engagement rate, compared with 68.2% for Google organic and 57.1% for direct. After a Bonferroni correction, the Instagram vs. direct difference is significant (*p* < .001). The other pairs are not significant at this sample size.
+
+**Limitations:** The baseline covers only a few weeks of data, average engagement time is reported without a variance, so it is compared descriptively, and GA4 data is observational. Results will be framed as associations, not causes.
+
+## Final Deliverables
+
+- A Quarto **Revealjs presentation** (`.qmd` and rendered HTML) published under the Marketing Analytics Projects tab
+- The cleaned data files and R code in the GitHub repository, so the analysis is reproducible
+- A short written summary of insights and recommendations on the project's page

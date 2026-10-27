@@ -3,18 +3,22 @@ project:
   output-dir: docs
   render:
     - index.qmd
-    - dashboard.qmd
-    - cep-dashboard.qmd
-    - css-scss.qmd
-    - listings.qmd
-    - "posts/*/index.qmd"
+    - digital-marketing.qmd
+    - analytics.qmd
+    - website-analytics.qmd
+    - resume.qmd
+    - "projects/*/*/index.qmd"
+    - projects/analytics/followers-to-donors/slides.qmd
+  resources:
+    - "cv/*.pdf"
 
 website:
   title: "Ron Stephen Sabilla"
-  description: "Digital marketing analytics portfolio, MSDM at Cal Poly Pomona"
+  description: "Digital marketing and analytics portfolio, MSDM at Cal Poly Pomona"
   site-url: "https://rsabilla.github.io/m10-quarto-website/"
   repo-url: "https://github.com/rsabilla/m10-quarto-website"
   repo-actions: [source]
+  # google-analytics: "G-XXXXXXXXXX"   # uncomment and paste your GA4 Measurement ID
   page-navigation: true
   back-to-top-navigation: true
   navbar:
@@ -22,19 +26,21 @@ website:
     left:
       - text: "Home"
         href: index.qmd
-      - text: "Dashboard"
-        href: dashboard.qmd
-      - text: "CSS & SCSS"
-        href: css-scss.qmd
-      - text: "Listings"
-        href: listings.qmd
+      - text: "Digital Marketing Projects"
+        href: digital-marketing.qmd
+      - text: "Marketing Analytics Projects"
+        href: analytics.qmd
+      - text: "Website Analytics"
+        href: website-analytics.qmd
+      - text: "Resume"
+        href: resume.qmd
     right:
       - icon: github
-        href: "https://github.com/rsabilla/m10-quarto-website"
-        aria-label: GitHub repo
+        href: "https://github.com/rsabilla"
+        aria-label: GitHub
   page-footer:
     left: "© 2026 Ron Stephen Sabilla"
-    right: "Built with [Quarto](https://quarto.org)"
+    right: "Built with [Quarto](https://quarto.org) · Hosted on GitHub Pages"
 
 format:
   html:

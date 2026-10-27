@@ -1,0 +1,22 @@
+---
+title: "Digital Marketing Projects"
+subtitle: "Creative content, marketing strategy, brand development, and positioning"
+listing:
+  id: marketing-projects
+  contents: "projects/marketing/*/index.qmd"
+  type: grid
+  sort: "date desc"
+  categories: true
+  filter-ui: true
+  sort-ui: true
+  fields: [image, title, description, categories, date]
+  grid-columns: 2
+  image-height: 180px
+page-layout: full
+toc: false
+---
+
+These projects show how I approach the creative and strategic side of marketing: understanding an audience, shaping a message, and building content and brand experiences that move people to act.
+
+::: {#marketing-projects}
+:::

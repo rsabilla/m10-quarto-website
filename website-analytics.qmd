@@ -1,0 +1,89 @@
+---
+title: "Website Analytics"
+subtitle: "How visitors find and use this portfolio: GA4 → Search Console → BigQuery → Looker Studio"
+---
+
+::: {.callout-warning}
+## Report in progress
+Tracking on this site started on **[DATE GA4 WAS INSTALLED]**. The data sections below will be filled in once enough traffic has been collected.
+:::
+
+## Objective
+
+This page analyzes traffic to my own portfolio website. The goal is to understand **who visits, how they find the site, and whether they reach the pages that matter most to a recruiter**: my projects and my resume.
+
+**Research questions**
+
+1. Which channels bring visitors to the site (organic search, direct, referral, social)?
+2. Which search queries lead people to the site in Google?
+3. Which pages hold attention, and which lose visitors quickly?
+4. How many visitors reach a "conversion" page, such as the Resume or a project case study?
+
+## Data Pipeline
+
+```{mermaid}
+flowchart LR
+  A[Portfolio website<br/>Quarto on Netlify] -->|gtag.js| B[Google Analytics 4]
+  A -->|sitemap.xml| C[Google Search Console]
+  C -->|linked| B
+  B -->|daily export| D[BigQuery]
+  B --> E[Looker Studio]
+  D --> E
+  D -->|SQL + R| F[This report]
+```
+
+| Step | Tool | Status |
+|---|---|---|
+| Add GA4 tag to the site | GA4 + `_quarto.yml` | ☐ |
+| Verify site and submit sitemap | Google Search Console | ☐ |
+| Link Search Console to GA4 | GA4 Admin → Product links | ☐ |
+| Turn on BigQuery export | GA4 Admin → BigQuery links | ☐ |
+| Build dashboard | Looker Studio | ☐ |
+| Write insights report | Quarto (this page) | ☐ |
+
+## Key Metrics and Conversions
+
+| Metric | Definition | Why it matters |
+|---|---|---|
+| Users and sessions | Visitors and visits to the site | Overall reach |
+| Sessions by channel | Organic, direct, referral, social | Which sources bring visitors |
+| Engagement rate | Share of sessions over 10s, 2+ pages, or with a key event | Quality of traffic |
+| Search impressions, clicks, CTR | From Search Console | Visibility in Google |
+| **Key event: `resume_view`** | Visit to the Resume page | Main "conversion" for a recruiter |
+| **Key event: `project_view`** | Visit to any project case study | Interest in my work |
+| **Key event: `file_download`** | Resume PDF download (GA4 enhanced measurement) | Strongest signal of interest |
+
+## Looker Studio Dashboard
+
+<!-- Replace the src below with your Looker Studio embed URL (File → Embed report) -->
+<!--
+<iframe width="100%" height="720" src="https://lookerstudio.google.com/embed/reporting/YOUR-REPORT-ID" frameborder="0" style="border:1px solid #E3E8E5; border-radius:12px;" allowfullscreen></iframe>
+-->
+
+*Dashboard will be embedded here.*
+
+## BigQuery Analysis
+
+Example query used to count sessions by traffic source from the GA4 export:
+
+```{.sql filename="sessions_by_source.sql"}
+SELECT
+  traffic_source.source AS source,
+  traffic_source.medium AS medium,
+  COUNT(DISTINCT CONCAT(user_pseudo_id,
+        CAST((SELECT value.int_value FROM UNNEST(event_params)
+              WHERE key = 'ga_session_id') AS STRING))) AS sessions
+FROM `YOUR-PROJECT.analytics_YOUR-PROPERTY-ID.events_*`
+WHERE _TABLE_SUFFIX BETWEEN '20261101' AND '20261130'
+GROUP BY source, medium
+ORDER BY sessions DESC;
+```
+
+## Insights
+
+*To be completed once data is collected.* This section will cover:
+
+- **Acquisition:** which channels and search queries drive visits
+- **Engagement:** which pages hold attention and which lose visitors
+- **Conversions:** how many visitors reach the Resume and project pages, and from which channels
+- **Recommendations:** changes to content, titles, and internal links to improve visibility and engagement

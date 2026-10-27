@@ -1,0 +1,235 @@
+---
+title: "From Followers to Donors"
+subtitle: "What a nonprofit's first month of GA4 data says about channel quality"
+author: "Ron Stephen Sabilla"
+date: today
+format:
+  revealjs:
+    theme: [default, slides.scss]
+    slide-number: true
+    preview-links: auto
+    footer: "Ron Stephen Sabilla · MSDM, Cal Poly Pomona"
+    embed-resources: false
+execute:
+  echo: false
+  warning: false
+  message: false
+---
+
+```{r}
+#| label: setup
+library(readr); library(dplyr); library(ggplot2); library(ggrepel); library(scales)
+green <- "#1E4D2B"; gold <- "#FFB81C"; grey <- "#9AA5A0"
+sources <- read_csv("../../../data/traffic_source_medium.csv", show_col_types = FALSE)
+pages   <- read_csv("../../../data/pages.csv", show_col_types = FALSE)
+devices <- read_csv("../../../data/devices.csv", show_col_types = FALSE)
+totals  <- read_csv("../../../data/totals.csv", show_col_types = FALSE)
+tot <- setNames(totals$value, totals$metric)
+theme_set(theme_minimal(base_size = 16) +
+  theme(panel.grid.minor = element_blank(), plot.title.position = "plot"))
+```
+
+## The problem {.smaller}
+
+::: {.columns}
+::: {.column width="55%"}
+A small equine-therapy nonprofit relies on **donations** to keep care affordable, but has very little staff time for marketing.
+
+GA4 went live in October 2026. The director's question:
+
+> *Which visitors are worth our limited time, and why aren't they reaching the donation page?*
+:::
+::: {.column width="45%"}
+::: {.callout-note}
+## Audience
+Executive Director, who decides where marketing effort goes.
+:::
+::: {.callout-tip}
+## Data
+GA4 · Sep 18 – Oct 15, 2026 · aggregated, no personal data
+:::
+:::
+:::
+
+::: {.notes}
+Frame this as a resource-allocation question, not a traffic question.
+:::
+
+## First month at a glance
+
+::: {.columns}
+::: {.column width="25%"}
+### `r comma(tot[["sessions"]])`
+sessions
+:::
+::: {.column width="25%"}
+### `r comma(tot[["active_users"]])`
+active users
+:::
+::: {.column width="25%"}
+### `r tot[["engagement_rate"]]`%
+engagement rate
+:::
+::: {.column width="25%"}
+### `r tot[["key_events"]]`
+key events in reports
+:::
+:::
+
+<br>
+
+- Traffic is real, but **zero key events** have been recorded in reports yet
+- `generate_lead` was just validated in DebugView, and donations are not tracked yet
+
+## Instagram brings half the traffic
+
+```{r}
+#| fig-height: 5
+#| fig-width: 10
+sources |>
+  mutate(share = sessions / tot[["sessions"]],
+         source_medium = reorder(source_medium, sessions),
+         hi = source_medium == "ig / social") |>
+  ggplot(aes(sessions, source_medium, fill = hi)) +
+  geom_col(width = .7) +
+  geom_text(aes(label = paste0(sessions, " (", percent(share, 1), ")")), hjust = -0.1, size = 4.5) +
+  scale_fill_manual(values = c(`TRUE` = green, `FALSE` = grey), guide = "none") +
+  scale_x_continuous(expand = expansion(mult = c(0, .25))) +
+  labs(x = "Sessions", y = NULL, title = "Sessions by source / medium (top 10 of 18)")
+```
+
+## But does that traffic engage? {.smaller}
+
+```{r}
+top3 <- sources |> filter(source_medium %in% c("ig / social", "google / organic", "(direct) / (none)"))
+tab <- cbind(engaged = top3$engaged_sessions, not = top3$sessions - top3$engaged_sessions)
+rownames(tab) <- top3$source_medium
+ct <- chisq.test(tab)
+pw <- pairwise.prop.test(tab[, "engaged"], rowSums(tab), p.adjust.method = "bonferroni")
+```
+
+::: {.columns}
+::: {.column width="55%"}
+```{r}
+#| fig-height: 5
+#| fig-width: 6
+top3 |>
+  mutate(rate = engaged_sessions / sessions,
+         source_medium = reorder(source_medium, rate)) |>
+  ggplot(aes(rate, source_medium)) +
+  geom_col(fill = green, width = .6) +
+  geom_text(aes(label = percent(rate, .1)), hjust = 1.15, color = "white", size = 5) +
+  scale_x_continuous(labels = percent, limits = c(0, 1)) +
+  labs(x = "Engagement rate", y = NULL)
+```
+:::
+::: {.column width="45%"}
+**Chi-square test of independence**
+
+χ² = `r round(ct$statistic, 2)`, df = `r ct$parameter`, *p* `r ifelse(ct$p.value < .001, "< .001", paste("=", round(ct$p.value, 3)))`
+
+Engagement **does** depend on the source.
+
+**Pairwise (Bonferroni):**
+
+- Instagram vs. direct: *p* `r ifelse(pw$p.value["(direct) / (none)", "ig / social"] < .001, "< .001", round(pw$p.value["(direct) / (none)", "ig / social"], 3))`
+- Other pairs: not significant at this sample size
+:::
+:::
+
+## Engaged, but briefly
+
+Instagram has the highest engagement rate but the shortest visits (26s). Google organic visitors stay the longest (56s).
+
+```{r}
+#| fig-height: 4.3
+#| fig-width: 10
+p <- sources |> filter(sessions >= 5) |>
+  ggplot(aes(avg_engagement_sec, engagement_rate, size = sessions, text = source_medium)) +
+  geom_point(color = green, alpha = .7) +
+  geom_text_repel(aes(label = source_medium), size = 4.5, color = "#1F2933", point.padding = .6, box.padding = .6, seed = 1) +
+  scale_size(range = c(3, 14), guide = "none") +
+  scale_y_continuous(limits = c(35, 105)) +
+  labs(x = "Avg engagement time per session (sec)", y = "Engagement rate (%)")
+p
+```
+
+## Where attention is lost
+
+The homepage gets about half of all views but holds visitors only **12 seconds**, and no donation page made the top 10.
+
+```{r}
+#| fig-height: 4.3
+#| fig-width: 10
+pg <- pages |> mutate(share = views / sum(views))
+ggplot(pg, aes(share, avg_engagement_sec, label = page)) +
+  geom_hline(yintercept = median(pg$avg_engagement_sec), linetype = "dashed", color = grey) +
+  geom_point(aes(color = page == "Home"), size = 5) +
+  geom_text_repel(size = 4.2, box.padding = .5, seed = 2, max.overlaps = 20) +
+  scale_color_manual(values = c(`TRUE` = gold, `FALSE` = green), guide = "none") +
+  scale_x_continuous(labels = percent, expand = expansion(mult = c(.05, .1))) +
+  labs(x = "Share of top-10 page views", y = "Avg engagement time (sec)")
+```
+
+## Mobile-first, no question {.smaller}
+
+```{r}
+dev <- devices |> mutate(sessions = round(engaged_sessions / (engagement_rate / 100)))
+dtab <- cbind(engaged = dev$engaged_sessions, not = dev$sessions - dev$engaged_sessions)
+dct <- suppressWarnings(chisq.test(dtab))
+dft <- fisher.test(dtab)
+```
+
+::: {.columns}
+::: {.column width="55%"}
+```{r}
+#| fig-height: 4.5
+#| fig-width: 6
+devices |>
+  mutate(device = reorder(device, active_users), share = active_users / sum(active_users)) |>
+  ggplot(aes(active_users, device)) +
+  geom_col(fill = c(green, grey, grey)[match(devices$device, c("Mobile","Desktop","Tablet"))], width = .6) +
+  geom_text(aes(label = percent(share, .1)), hjust = -0.1, size = 5) +
+  scale_x_continuous(expand = expansion(mult = c(0, .2))) +
+  labs(x = "Active users", y = NULL)
+```
+:::
+::: {.column width="45%"}
+- **88% of users are on mobile** (87.6% per GA4)
+- Mobile engagement rate: `r devices$engagement_rate[1]`%; desktop: `r devices$engagement_rate[2]`%
+- Engagement rate differs by device: Fisher's exact test, *p* = `r round(dft$p.value, 3)` (used because tablet counts are small)
+
+Desktop visits run longer (79s), but mobile is where the audience is.
+:::
+:::
+
+## Recommendations
+
+::: {.incremental}
+1. **Make Instagram the primary donor channel.** It's the biggest, most engaged source. Add UTM-tagged donation links and a clear ask.
+2. **Fix the homepage first.** Add impact stats and a visible *Donate* button above the fold, since half of all visitors land there.
+3. **Bring the donation pathway into the top 10.** Link to it from Community Events and Volunteer, the pages supporters already spend time on.
+4. **Design mobile-first.** Test every donation step on a phone.
+5. **Finish tracking.** Set up completed donations as a key event so the next report measures dollars, not just clicks.
+:::
+
+## Limitations & next steps {.smaller}
+
+**Limitations**
+
+- Only a few weeks of data, so results are an early baseline
+- GA4 is observational: results show associations, not causes
+- Average engagement time has no variance in standard reports, so it's compared descriptively
+
+**Next steps**
+
+- Refresh with later GA4 exports and compare before and after donor campaigns and the homepage redesign
+- Export raw events to BigQuery for session-level analysis
+- Add completed-donation tracking, then measure donation conversion rate by channel
+
+## Thank you {.center}
+
+**Ron Stephen Sabilla**<br>
+MSDM, Cal Poly Pomona
+
+[github.com/rsabilla](https://github.com/rsabilla)

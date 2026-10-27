@@ -1,0 +1,41 @@
+---
+title: "From Followers to Donors"
+description: "Revealjs presentation: a chi-square analysis of a nonprofit's first month of GA4 data, showing which channels bring engaged visitors and where donors are lost."
+date: 2026-10-27
+categories: [Revealjs, GA4, R, Hypothesis Testing, CEP]
+image: thumbnail.png
+---
+
+## Overview
+
+A small equine-therapy nonprofit (my MSDM capstone client) needs to know which website visitors are worth its limited marketing time, and why they aren't reaching the donation page. I analyzed the first month of GA4 data in R and presented the findings to the Executive Director as a Quarto Revealjs deck.
+
+<a href="slides.html" class="btn btn-primary btn-lg" target="_blank">Open the presentation ↗</a>
+
+<iframe src="slides.html" width="100%" height="480" style="border:1px solid #E3E8E5; border-radius:12px; margin-top:1rem;"></iframe>
+
+*Press **F** for full screen and **S** for speaker notes.*
+
+## Project Summary
+
+| | |
+|---|---|
+| **Data** | GA4 traffic acquisition, pages, and device reports (Sep 18 – Oct 15, 2026): 902 sessions, 764 users |
+| **Problem** | Donations are the top priority, but no donation page is in the top 10, and zero key events have been recorded |
+| **Audience** | Executive Director of the nonprofit |
+| **Methods** | Descriptive KPIs, chi-square test of independence, Bonferroni pairwise proportion tests, Fisher's exact test, page quadrant analysis |
+| **Tools** | R (`dplyr`, `ggplot2`), Quarto Revealjs |
+
+## Key Insights
+
+- **Engagement depends on the channel** (χ² = 22.96, *p* < .001). Instagram has the highest engagement rate (76%), and it's significantly higher than direct traffic.
+- **Instagram visits are short** (26s), while Google organic visitors stay the longest (56s).
+- **The homepage gets half the views but only 12 seconds of attention**, so it's the highest-value place for impact stats and a donation ask.
+- **88% of users are on mobile**, so the donation journey must be built mobile-first.
+
+## Recommendations
+
+1. Make Instagram the primary donor channel, with UTM-tagged donation links
+2. Redesign the homepage with impact stats and a visible Donate button
+3. Link the donation pathway from the Community Events and Volunteer pages
+4. Track completed donations as a GA4 key event

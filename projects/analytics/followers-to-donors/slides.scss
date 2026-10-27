@@ -1,0 +1,11 @@
+/*-- scss:defaults --*/
+$presentation-heading-color: #1E4D2B;
+$link-color: #2E7D4F;
+$presentation-font-size-root: 34px;
+$presentation-heading-font-weight: 700;
+
+/*-- scss:rules --*/
+.reveal h2 { border-bottom: 4px solid #FFB81C; padding-bottom: .2em; }
+.reveal h3 { color: #1E4D2B; font-size: 1.6em; margin-bottom: 0; }
+.reveal .slide-number { color: #1E4D2B; }
+.reveal blockquote { border-left: 5px solid #FFB81C; background: #F4F6F5; }

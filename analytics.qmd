@@ -1,0 +1,21 @@
+---
+title: "Marketing Analytics Projects"
+subtitle: "Case studies in data-driven marketing: dashboards, statistical testing, modeling, and SQL"
+listing:
+  id: analytics-projects
+  contents: "projects/analytics/*/index.qmd"
+  type: default
+  sort: "date desc"
+  categories: true
+  filter-ui: true
+  sort-ui: true
+  fields: [image, date, title, description, categories, reading-time]
+  image-placeholder: images/ron-headshot.jpg
+page-layout: full
+toc: false
+---
+
+A blog-style collection of my analytics work. Each case study starts with a business question and ends with insights a decision-maker can act on.
+
+::: {#analytics-projects}
+:::
