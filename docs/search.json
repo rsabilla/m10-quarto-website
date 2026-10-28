@@ -161,95 +161,67 @@
     "text": "Plan\n\n\n\n\n\n\n\n\nPhase\nTiming\nWork\n\n\n\n\nAudit & baseline\nFall 2026\nInventory donor content, code social posts (information / community / action), map the donor journey, record the baseline\n\n\nBuild & launch\nSpring 2027\nHomepage impact stats, donor stories, social and email campaign\n\n\nEvaluate\nSpring–Summer 2027\nPre/post comparison, channel and content comparison, message tests\n\n\n\nSkills: marketing strategy, content planning, nonprofit fundraising, brand messaging, campaign measurement"
   },
   {
-    "objectID": "projects/analytics/sql-portfolio/index.html",
-    "href": "projects/analytics/sql-portfolio/index.html",
-    "title": "SQL & BigQuery Learning Portfolio",
+    "objectID": "projects/analytics/website-analytics/index.html",
+    "href": "projects/analytics/website-analytics/index.html",
+    "title": "Who Visits My Portfolio? A GA4 Website Traffic Analysis",
     "section": "",
-    "text": "A GitHub Pages portfolio built across three IBM 6500 assignments. Each report includes the course certificate, chapter-by-chapter notes, and SQL examples rewritten around marketing data like orders, campaigns, and GA4 sessions.\nSkills: COUNT/DISTINCT, filtering, aggregates, GROUP BY/HAVING, BigQuery GoogleSQL\nView the portfolio →\n\n\n\n Back to top"
+    "text": "WarningReport in progress\n\n\n\nGA4 tracking on this site started in late October 2026. The data sections below will be filled in once enough traffic has been collected."
   },
   {
-    "objectID": "projects/analytics/followers-to-donors/index.html",
-    "href": "projects/analytics/followers-to-donors/index.html",
-    "title": "From Followers to Donors",
-    "section": "",
-    "text": "A small equine-therapy nonprofit (my MSDM capstone client) needs to know which website visitors are worth its limited marketing time, and why they aren’t reaching the donation page. I analyzed the first month of GA4 data in R and presented the findings to the Executive Director as a Quarto Revealjs deck.\nOpen the presentation ↗\n\n\nPress F for full screen and S for speaker notes."
-  },
-  {
-    "objectID": "projects/analytics/followers-to-donors/index.html#overview",
-    "href": "projects/analytics/followers-to-donors/index.html#overview",
-    "title": "From Followers to Donors",
-    "section": "",
-    "text": "A small equine-therapy nonprofit (my MSDM capstone client) needs to know which website visitors are worth its limited marketing time, and why they aren’t reaching the donation page. I analyzed the first month of GA4 data in R and presented the findings to the Executive Director as a Quarto Revealjs deck.\nOpen the presentation ↗\n\n\nPress F for full screen and S for speaker notes."
-  },
-  {
-    "objectID": "projects/analytics/followers-to-donors/index.html#project-summary",
-    "href": "projects/analytics/followers-to-donors/index.html#project-summary",
-    "title": "From Followers to Donors",
-    "section": "Project Summary",
-    "text": "Project Summary\n\n\n\n\n\n\n\nData\nGA4 traffic acquisition, pages, and device reports (Sep 18 – Oct 15, 2026): 902 sessions, 764 users\n\n\nProblem\nDonations are the top priority, but no donation page is in the top 10, and zero key events have been recorded\n\n\nAudience\nExecutive Director of the nonprofit\n\n\nMethods\nDescriptive KPIs, chi-square test of independence, Bonferroni pairwise proportion tests, Fisher’s exact test, page quadrant analysis\n\n\nTools\nR (dplyr, ggplot2), Quarto Revealjs"
-  },
-  {
-    "objectID": "projects/analytics/followers-to-donors/index.html#key-insights",
-    "href": "projects/analytics/followers-to-donors/index.html#key-insights",
-    "title": "From Followers to Donors",
-    "section": "Key Insights",
-    "text": "Key Insights\n\nEngagement depends on the channel (χ² = 22.96, p &lt; .001). Instagram has the highest engagement rate (76%), and it’s significantly higher than direct traffic.\nInstagram visits are short (26s), while Google organic visitors stay the longest (56s).\nThe homepage gets half the views but only 12 seconds of attention, so it’s the highest-value place for impact stats and a donation ask.\n88% of users are on mobile, so the donation journey must be built mobile-first."
-  },
-  {
-    "objectID": "projects/analytics/followers-to-donors/index.html#recommendations",
-    "href": "projects/analytics/followers-to-donors/index.html#recommendations",
-    "title": "From Followers to Donors",
-    "section": "Recommendations",
-    "text": "Recommendations\n\nMake Instagram the primary donor channel, with UTM-tagged donation links\nRedesign the homepage with impact stats and a visible Donate button\nLink the donation pathway from the Community Events and Volunteer pages\nTrack completed donations as a GA4 key event"
-  },
-  {
-    "objectID": "website-analytics.html",
-    "href": "website-analytics.html",
-    "title": "Website Analytics",
-    "section": "",
-    "text": "WarningReport in progress\n\n\n\nTracking on this site started on [DATE GA4 WAS INSTALLED]. The data sections below will be filled in once enough traffic has been collected."
-  },
-  {
-    "objectID": "website-analytics.html#objective",
-    "href": "website-analytics.html#objective",
-    "title": "Website Analytics",
+    "objectID": "projects/analytics/website-analytics/index.html#objective",
+    "href": "projects/analytics/website-analytics/index.html#objective",
+    "title": "Who Visits My Portfolio? A GA4 Website Traffic Analysis",
     "section": "Objective",
     "text": "Objective\nThis page analyzes traffic to my own portfolio website. The goal is to understand who visits, how they find the site, and whether they reach the pages that matter most to a recruiter: my projects and my resume.\nResearch questions\n\nWhich channels bring visitors to the site (organic search, direct, referral, social)?\nWhich search queries lead people to the site in Google?\nWhich pages hold attention, and which lose visitors quickly?\nHow many visitors reach a “conversion” page, such as the Resume or a project case study?"
   },
   {
-    "objectID": "website-analytics.html#data-pipeline",
-    "href": "website-analytics.html#data-pipeline",
-    "title": "Website Analytics",
+    "objectID": "projects/analytics/website-analytics/index.html#data-pipeline",
+    "href": "projects/analytics/website-analytics/index.html#data-pipeline",
+    "title": "Who Visits My Portfolio? A GA4 Website Traffic Analysis",
     "section": "Data Pipeline",
     "text": "Data Pipeline\n\n\n\n\n\nflowchart LR\n  A[Portfolio website&lt;br/&gt;Quarto on Netlify] --&gt;|gtag.js| B[Google Analytics 4]\n  A --&gt;|sitemap.xml| C[Google Search Console]\n  C --&gt;|linked| B\n  B --&gt;|daily export| D[BigQuery]\n  B --&gt; E[Looker Studio]\n  D --&gt; E\n  D --&gt;|SQL + R| F[This report]\n\n\n\n\n\n\n\n\n\nStep\nTool\nStatus\n\n\n\n\nAdd GA4 tag to the site\nGA4 + _quarto.yml\n☐\n\n\nVerify site and submit sitemap\nGoogle Search Console\n☐\n\n\nLink Search Console to GA4\nGA4 Admin → Product links\n☐\n\n\nTurn on BigQuery export\nGA4 Admin → BigQuery links\n☐\n\n\nBuild dashboard\nLooker Studio\n☐\n\n\nWrite insights report\nQuarto (this page)\n☐"
   },
   {
-    "objectID": "website-analytics.html#key-metrics-and-conversions",
-    "href": "website-analytics.html#key-metrics-and-conversions",
-    "title": "Website Analytics",
+    "objectID": "projects/analytics/website-analytics/index.html#key-metrics-and-conversions",
+    "href": "projects/analytics/website-analytics/index.html#key-metrics-and-conversions",
+    "title": "Who Visits My Portfolio? A GA4 Website Traffic Analysis",
     "section": "Key Metrics and Conversions",
     "text": "Key Metrics and Conversions\n\n\n\n\n\n\n\n\nMetric\nDefinition\nWhy it matters\n\n\n\n\nUsers and sessions\nVisitors and visits to the site\nOverall reach\n\n\nSessions by channel\nOrganic, direct, referral, social\nWhich sources bring visitors\n\n\nEngagement rate\nShare of sessions over 10s, 2+ pages, or with a key event\nQuality of traffic\n\n\nSearch impressions, clicks, CTR\nFrom Search Console\nVisibility in Google\n\n\nKey event: resume_view\nVisit to the Resume page\nMain “conversion” for a recruiter\n\n\nKey event: project_view\nVisit to any project case study\nInterest in my work\n\n\nKey event: file_download\nResume PDF download (GA4 enhanced measurement)\nStrongest signal of interest"
   },
   {
-    "objectID": "website-analytics.html#looker-studio-dashboard",
-    "href": "website-analytics.html#looker-studio-dashboard",
-    "title": "Website Analytics",
+    "objectID": "projects/analytics/website-analytics/index.html#looker-studio-dashboard",
+    "href": "projects/analytics/website-analytics/index.html#looker-studio-dashboard",
+    "title": "Who Visits My Portfolio? A GA4 Website Traffic Analysis",
     "section": "Looker Studio Dashboard",
     "text": "Looker Studio Dashboard\n\n\nDashboard will be embedded here."
   },
   {
-    "objectID": "website-analytics.html#bigquery-analysis",
-    "href": "website-analytics.html#bigquery-analysis",
-    "title": "Website Analytics",
+    "objectID": "projects/analytics/website-analytics/index.html#bigquery-analysis",
+    "href": "projects/analytics/website-analytics/index.html#bigquery-analysis",
+    "title": "Who Visits My Portfolio? A GA4 Website Traffic Analysis",
     "section": "BigQuery Analysis",
     "text": "BigQuery Analysis\nExample query used to count sessions by traffic source from the GA4 export:\n\n\nsessions_by_source.sql\n\nSELECT\n  traffic_source.source AS source,\n  traffic_source.medium AS medium,\n  COUNT(DISTINCT CONCAT(user_pseudo_id,\n        CAST((SELECT value.int_value FROM UNNEST(event_params)\n              WHERE key = 'ga_session_id') AS STRING))) AS sessions\nFROM `YOUR-PROJECT.analytics_YOUR-PROPERTY-ID.events_*`\nWHERE _TABLE_SUFFIX BETWEEN '20261101' AND '20261130'\nGROUP BY source, medium\nORDER BY sessions DESC;"
   },
   {
-    "objectID": "website-analytics.html#insights",
-    "href": "website-analytics.html#insights",
-    "title": "Website Analytics",
+    "objectID": "projects/analytics/website-analytics/index.html#insights",
+    "href": "projects/analytics/website-analytics/index.html#insights",
+    "title": "Who Visits My Portfolio? A GA4 Website Traffic Analysis",
     "section": "Insights",
     "text": "Insights\nTo be completed once data is collected. This section will cover:\n\nAcquisition: which channels and search queries drive visits\nEngagement: which pages hold attention and which lose visitors\nConversions: how many visitors reach the Resume and project pages, and from which channels\nRecommendations: changes to content, titles, and internal links to improve visibility and engagement"
+  },
+  {
+    "objectID": "projects/analytics/shopify-channel-analysis/index.html",
+    "href": "projects/analytics/shopify-channel-analysis/index.html",
+    "title": "Traffic Source & AOV Analysis",
+    "section": "",
+    "text": "For our IBM 6540 (Applied Machine Learning for Marketing) group project, our five-person team analyzed a 60,000-row Shopify sales dataset. I owned RO1: traffic source and average order value (AOV) and wrote the conclusion slides.\nFinding: No statistically significant overall difference in AOV between channels, but meaningful channel × category interaction effects. Some channels performed better for specific product categories.\nTools: R, recipes, rsample, glmnet, Quarto revealjs\n\n\n\n Back to top"
+  },
+  {
+    "objectID": "resume.html",
+    "href": "resume.html",
+    "title": "Resume",
+    "section": "",
+    "text": "Download PDF ↓\n\n\nYour browser can’t display the PDF here. Download the resume instead.\n\n\n\n\n\n\n\n\nNoteHow this resume is built\n\n\n\n\n\nThe CV source is cv/cv.Rmd, written in R Markdown with the vitae package and the awesomecv template. Each section is a tibble rendered with detailed_entries() or brief_entries(), so updating the resume means editing a table and re-knitting the PDF.\n\n\n\n\n\n\n Back to top"
   },
   {
     "objectID": "digital-marketing.html",
@@ -305,21 +277,49 @@
     "href": "analytics.html",
     "title": "Marketing Analytics Projects",
     "section": "",
-    "text": "A blog-style collection of my analytics work. Each case study starts with a business question and ends with insights a decision-maker can act on.\n\n\n   \n    \n    \n      Order By\n      Default\n      \n        Title\n      \n      \n        Date - Oldest\n      \n      \n        Date - Newest\n      \n    \n  \n    \n      \n      \n    \n\n\n\n\n\n\n\n\n\n\nFrom Followers to Donors\n\n\n\nRevealjs\n\nGA4\n\nR\n\nHypothesis Testing\n\nCEP\n\n\n\nRevealjs presentation: a chi-square analysis of a nonprofit’s first month of GA4 data, showing which channels bring engaged visitors and where donors are lost.\n\n\n\n\n\nOct 27, 2026\n\n2 min\n\n\n\n\n\n\n\n\n\n\n\nSQL & BigQuery Learning Portfolio\n\n\n\nSQL\n\nBigQuery\n\nGitHub Pages\n\n\n\nThree DataCamp courses (Intro to SQL, Intro to BigQuery, Intermediate SQL) documented with marketing-focused query examples.\n\n\n\n\n\nOct 23, 2026\n\n1 min\n\n\n\n\n\n\n\n\n\n\n\nTraffic Source & AOV Analysis\n\n\n\nR\n\nMachine Learning\n\nE-commerce\n\n\n\nIBM 6540 group project analyzing 60,000 Shopify orders to see how traffic channels affect average order value.\n\n\n\n\n\nSep 10, 2026\n\n1 min\n\n\n\n\nNo matching items\n\n\n\n\n\n Back to top"
+    "text": "A blog-style collection of my analytics work. Each case study starts with a business question and ends with insights a decision-maker can act on.\n\n\n   \n    \n    \n      Order By\n      Default\n      \n        Title\n      \n      \n        Date - Oldest\n      \n      \n        Date - Newest\n      \n    \n  \n    \n      \n      \n    \n\n\n\n\n\n\n\n\n\n\nFrom Followers to Donors\n\n\n\nRevealjs\n\nGA4\n\nR\n\nHypothesis Testing\n\nCEP\n\n\n\nRevealjs presentation: a chi-square analysis of a nonprofit’s first month of GA4 data, showing which channels bring engaged visitors and where donors are lost.\n\n\n\n\n\nOct 27, 2026\n\n2 min\n\n\n\n\n\n\n\n\n\n\n\nWho Visits My Portfolio? A GA4 Website Traffic Analysis\n\n\n\nGA4\n\nSearch Console\n\nBigQuery\n\nLooker Studio\n\nSQL\n\n\n\nEnd-to-end web analytics on this site: GA4, Google Search Console, BigQuery, and a Looker Studio dashboard, with a Quarto report on traffic and conversions.\n\n\n\n\n\nOct 27, 2026\n\n3 min\n\n\n\n\n\n\n\n\n\n\n\nSQL & BigQuery Learning Portfolio\n\n\n\nSQL\n\nBigQuery\n\nGitHub Pages\n\n\n\nThree DataCamp courses (Intro to SQL, Intro to BigQuery, Intermediate SQL) documented with marketing-focused query examples.\n\n\n\n\n\nOct 23, 2026\n\n1 min\n\n\n\n\n\n\n\n\n\n\n\nTraffic Source & AOV Analysis\n\n\n\nR\n\nMachine Learning\n\nE-commerce\n\n\n\nIBM 6540 group project analyzing 60,000 Shopify orders to see how traffic channels affect average order value.\n\n\n\n\n\nSep 10, 2026\n\n1 min\n\n\n\n\nNo matching items\n\n\n\n\n\n Back to top"
   },
   {
-    "objectID": "resume.html",
-    "href": "resume.html",
-    "title": "Resume",
+    "objectID": "projects/analytics/followers-to-donors/index.html",
+    "href": "projects/analytics/followers-to-donors/index.html",
+    "title": "From Followers to Donors",
     "section": "",
-    "text": "Download PDF ↓\n\n\nYour browser can’t display the PDF here. Download the resume instead.\n\n\n\n\n\n\n\n\nNoteHow this resume is built\n\n\n\n\n\nThe CV source is cv/cv.Rmd, written in R Markdown with the vitae package and the awesomecv template. Each section is a tibble rendered with detailed_entries() or brief_entries(), so updating the resume means editing a table and re-knitting the PDF.\n\n\n\n\n\n\n Back to top"
+    "text": "A small equine-therapy nonprofit (my MSDM capstone client) needs to know which website visitors are worth its limited marketing time, and why they aren’t reaching the donation page. I analyzed the first month of GA4 data in R and presented the findings to the Executive Director as a Quarto Revealjs deck.\nOpen the presentation ↗\n\n\nPress F for full screen and S for speaker notes."
   },
   {
-    "objectID": "projects/analytics/shopify-channel-analysis/index.html",
-    "href": "projects/analytics/shopify-channel-analysis/index.html",
-    "title": "Traffic Source & AOV Analysis",
+    "objectID": "projects/analytics/followers-to-donors/index.html#overview",
+    "href": "projects/analytics/followers-to-donors/index.html#overview",
+    "title": "From Followers to Donors",
     "section": "",
-    "text": "For our IBM 6540 (Applied Machine Learning for Marketing) group project, our five-person team analyzed a 60,000-row Shopify sales dataset. I owned RO1: traffic source and average order value (AOV) and wrote the conclusion slides.\nFinding: No statistically significant overall difference in AOV between channels, but meaningful channel × category interaction effects. Some channels performed better for specific product categories.\nTools: R, recipes, rsample, glmnet, Quarto revealjs\n\n\n\n Back to top"
+    "text": "A small equine-therapy nonprofit (my MSDM capstone client) needs to know which website visitors are worth its limited marketing time, and why they aren’t reaching the donation page. I analyzed the first month of GA4 data in R and presented the findings to the Executive Director as a Quarto Revealjs deck.\nOpen the presentation ↗\n\n\nPress F for full screen and S for speaker notes."
+  },
+  {
+    "objectID": "projects/analytics/followers-to-donors/index.html#project-summary",
+    "href": "projects/analytics/followers-to-donors/index.html#project-summary",
+    "title": "From Followers to Donors",
+    "section": "Project Summary",
+    "text": "Project Summary\n\n\n\n\n\n\n\nData\nGA4 traffic acquisition, pages, and device reports (Sep 18 – Oct 15, 2026): 902 sessions, 764 users\n\n\nProblem\nDonations are the top priority, but no donation page is in the top 10, and zero key events have been recorded\n\n\nAudience\nExecutive Director of the nonprofit\n\n\nMethods\nDescriptive KPIs, chi-square test of independence, Bonferroni pairwise proportion tests, Fisher’s exact test, page quadrant analysis\n\n\nTools\nR (dplyr, ggplot2), Quarto Revealjs"
+  },
+  {
+    "objectID": "projects/analytics/followers-to-donors/index.html#key-insights",
+    "href": "projects/analytics/followers-to-donors/index.html#key-insights",
+    "title": "From Followers to Donors",
+    "section": "Key Insights",
+    "text": "Key Insights\n\nEngagement depends on the channel (χ² = 22.96, p &lt; .001). Instagram has the highest engagement rate (76%), and it’s significantly higher than direct traffic.\nInstagram visits are short (26s), while Google organic visitors stay the longest (56s).\nThe homepage gets half the views but only 12 seconds of attention, so it’s the highest-value place for impact stats and a donation ask.\n88% of users are on mobile, so the donation journey must be built mobile-first."
+  },
+  {
+    "objectID": "projects/analytics/followers-to-donors/index.html#recommendations",
+    "href": "projects/analytics/followers-to-donors/index.html#recommendations",
+    "title": "From Followers to Donors",
+    "section": "Recommendations",
+    "text": "Recommendations\n\nMake Instagram the primary donor channel, with UTM-tagged donation links\nRedesign the homepage with impact stats and a visible Donate button\nLink the donation pathway from the Community Events and Volunteer pages\nTrack completed donations as a GA4 key event"
+  },
+  {
+    "objectID": "projects/analytics/sql-portfolio/index.html",
+    "href": "projects/analytics/sql-portfolio/index.html",
+    "title": "SQL & BigQuery Learning Portfolio",
+    "section": "",
+    "text": "A GitHub Pages portfolio built across three IBM 6500 assignments. Each report includes the course certificate, chapter-by-chapter notes, and SQL examples rewritten around marketing data like orders, campaigns, and GA4 sessions.\nSkills: COUNT/DISTINCT, filtering, aggregates, GROUP BY/HAVING, BigQuery GoogleSQL\nView the portfolio →\n\n\n\n Back to top"
   },
   {
     "objectID": "projects/marketing/asi-social-media/index.html",

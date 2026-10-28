@@ -1,6 +1,6 @@
 ---
 title: "Portfolio Website Project Proposal"
-subtitle: "Revealjs Presentation Project · From Followers to Donors"
+subtitle: "Ron Stephen Sabilla · MSDM, Cal Poly Pomona"
 author: "Ron Stephen Sabilla"
 date: today
 format:
@@ -8,21 +8,97 @@ format:
     theme: [cosmo, custom.scss]
     toc: true
     toc-title: "Contents"
+    toc-depth: 3
     number-sections: true
     embed-resources: true
 ---
 
-## Project Overview
+::: {.callout-note}
+## Website
+- **Live site:** <https://rsabilla.github.io/m10-quarto-website/>
+- **GitHub repository:** <https://github.com/rsabilla/m10-quarto-website>
+:::
 
-My portfolio website is built in Quarto and organized into the tabs the assignment requires. This proposal focuses on the **Revealjs presentation project**, which will live under the Marketing Analytics Projects tab.
+# Executive Summary
 
-| Tab | What it shows | Status |
+My portfolio website is a Quarto site built for job applications in digital marketing and marketing analytics. It brings together my creative work (social media, content, and brand projects) and my analytics work (GA4, SQL, R, and statistical testing) in one place a recruiter can browse in a few minutes.
+
+This proposal covers the site's structure and the **two data projects** I will develop for the rest of the term. Both live under the **Marketing Analytics Projects** tab:
+
+1. **Who Visits My Portfolio?** A GA4 analysis of this website's own traffic
+2. **From Followers to Donors:** a Revealjs presentation analyzing GA4 data from my MSDM capstone client
+
+# Website Structure
+
+| Page | Content | Status |
 |---|---|---|
-| **Home** | Introduction and personal statement | Built |
-| **Digital Marketing Projects** | ASI social media, Yamaha marketing internship, Ontario Jr Reign social growth, nonprofit donor outreach, and personal brand site | Built, adding projects |
-| **Marketing Analytics Projects** | Blog-style case studies: Shopify channel analysis, SQL/BigQuery portfolio, and **this Revealjs presentation** | Built, presentation in progress |
-| **Website Analytics** | GA4 → Search Console → BigQuery → Looker Studio report on my own site's traffic | Set up in progress, data collecting |
-| **Resume** | CV built with Markdown and the `vitae` package | In progress |
+| **Home** | Introduction, photo, personal statement, career aspirations, skills, and education | Live |
+| **Digital Marketing Projects** | Multiple projects covering creative content, strategy, brand development, and positioning: ASI social media, Yamaha marketing internship, Ontario Jr Reign social growth, nonprofit donor outreach, and my personal brand website | Live |
+| **Marketing Analytics Projects** | Blog-style case studies: **Website Traffic Analysis (GA4)**, **Revealjs presentation**, Shopify traffic source & AOV analysis, and SQL & BigQuery portfolio | Live; the two projects below are in progress |
+| **Resume** | CV built with R Markdown and the `vitae` package | Live |
+
+# Project 1: Who Visits My Portfolio? A GA4 Website Traffic Analysis
+
+## Project Title
+
+**Who Visits My Portfolio? Measuring Traffic, Engagement, and Recruiter Conversions on My Personal Website**
+
+## Data and Source
+
+| Source | Data | Access |
+|---|---|---|
+| **Google Analytics 4** | Users, sessions, traffic source/medium, landing pages, engagement, events, and key events | GA4 tag added to the site through `_quarto.yml` (Measurement ID G-88YVYXFN72) |
+| **Google Search Console** | Search queries, impressions, clicks, CTR, and average position | Site verified, sitemap submitted, and linked to GA4 |
+| **Google BigQuery** | Raw, event-level GA4 export (daily tables) | GA4 → BigQuery link |
+| **Looker Studio** | Dashboard built on GA4 and BigQuery | Embedded on the project page |
+
+**Collection period:** from late October 2026 through the end of the term. Data are aggregated and anonymous, and GA4 does not collect personal information.
+
+## Managerial Problem
+
+A portfolio website is only useful if the right people find it and look at the right pages. Right now I have no evidence of:
+
+- **Whether recruiters and hiring managers are visiting at all**, and how they arrive (LinkedIn, résumé link, Google search, or direct)
+- **Which projects get attention**, and which are ignored
+- **Whether visitors reach the pages that lead to an interview**, such as the Resume page or a resume PDF download
+
+Without this data, I'd be guessing about which projects to feature, how to title them, and where to share the link.
+
+## Target Audience
+
+- **Primary:** Me, as the site owner deciding what to feature, rewrite, or promote, much like a marketing manager deciding where to invest effort
+- **Secondary:** Recruiters and hiring managers, who will see the finished report as evidence that I can run an end-to-end web analytics project
+
+## Research Questions
+
+1. **Acquisition:** Which channels (direct, LinkedIn/social, organic search, referral) bring visitors to the site?
+2. **Search visibility:** Which Google search queries show my site, and what is its click-through rate?
+3. **Engagement:** Which pages and projects hold attention, and which lose visitors quickly?
+4. **Conversion:** What share of sessions reach a "conversion" (viewing the Resume page, opening a project case study, or downloading the resume PDF), and does that rate differ by channel?
+
+## Expected Impact
+
+- **Better targeting:** Shows which channels actually send engaged visitors, so I can focus on sharing the link where it works, such as LinkedIn posts or job applications
+- **Stronger portfolio:** Highlights which projects get attention so I can move the strongest work to the top and improve or cut weak pages
+- **More interviews:** Improving the path from the Home page to the Resume and projects should increase resume views and downloads, my main "conversion"
+- **Career proof:** The finished project demonstrates the full GA4 → Search Console → BigQuery → Looker Studio workflow employers look for
+
+## Methods
+
+| Step | Method | Tool |
+|---|---|---|
+| Tracking setup | Install the GA4 tag, use enhanced measurement, and mark key events (`file_download`, Resume page view) | GA4, Quarto |
+| Data pipeline | Link Search Console to GA4 and GA4 to BigQuery (daily export) | GA4 Admin, BigQuery |
+| Data extraction | Query sessions, sources, page views, and events from the GA4 export using `UNNEST` on event parameters | **SQL in BigQuery** |
+| Descriptive analysis | KPIs, channel shares, engagement rate, and average engagement time by page | R (`dplyr`), Looker Studio |
+| Funnel analysis | Home → Projects → Resume → PDF download; drop-off rate at each step | SQL, R |
+| Hypothesis testing | **Chi-square test** of conversion by channel; **two-proportion z-test** for specific comparisons, with Fisher's exact test if counts are small | R |
+| Search analysis | Query-level impressions, clicks, CTR, and position | Search Console |
+| Visualization & reporting | Interactive Looker Studio dashboard plus a written Quarto report with insights and recommendations | Looker Studio, Quarto |
+
+**Limitation:** A new personal site will have low traffic, so some results may be descriptive or directional rather than statistically significant. Sample sizes will be reported alongside every rate.
+
+# Project 2: From Followers to Donors (Revealjs Presentation)
 
 ## Project Title
 
@@ -30,70 +106,56 @@ My portfolio website is built in Quarto and organized into the tabs the assignme
 
 ## Data and Source
 
-- **Source:** Google Analytics 4 property for my MSDM Culminating Experience Project (CEP) client, a nonprofit equine-assisted therapy organization in Southern California.
-- **Period:** September 18 – October 15, 2026, covering the first weeks after tracking went live (data begins around October 7).
-- **Reports used:** Traffic acquisition (session source/medium and campaign), Pages and screens, Tech details (device category), and Admin → Events / DebugView for tracking validation.
-- **Size:** 902 sessions, 764 active users, 1,674 page views, and 5,405 events.
-- **Key fields:** sessions, engaged sessions, engagement rate, average engagement time, events per session, views, active users, and device category.
-- **Privacy:** The data are aggregated and contain no personal information. Before publishing, I will confirm with the client and faculty mentor whether the organization can be named. If not, it will be presented as "a Southern California equine-therapy nonprofit."
-
-As the capstone continues, the dataset will be refreshed with later GA4 exports so the presentation can compare the baseline with results after website and donor-outreach changes.
+- **Source:** GA4 property for my MSDM Culminating Experience Project (CEP) client, a Southern California nonprofit that offers equine-assisted therapy
+- **Period:** September 18 – October 15, 2026, the first weeks after tracking went live
+- **Reports:** Traffic acquisition (session source/medium), Pages and screens, and Tech details (device category)
+- **Fields:** sessions, engaged sessions, engagement rate, average engagement time, views, active users, and device category
+- **Privacy:** Only aggregated GA4 metrics are used, with no personal data. The client is not named in the presentation, consistent with the course's guidance on client confidentiality.
 
 ## Managerial Problem
 
-Donations are the client's top-priority website outcome because they help pay for accessible, sliding-scale care. The organization has very limited staff time for marketing, so it needs to know where to focus.
-
-The first month of GA4 data shows a mismatch:
-
-- **Instagram brings the most visitors** (52% of sessions), but those visits average only 26 seconds.
-- **The homepage gets half of all views** but holds visitors for only 12 seconds.
-- **No donation-related page appears in the top 10 pages.**
-- **Zero key events have been recorded in reports** so far. The `generate_lead` event was only just validated, and completed donations are not yet tracked.
-
-The organization can see *how much* traffic it gets, but not *which* traffic is worth investing in or why visitors are not reaching the donation pathway.
+Donations are the client's top-priority website outcome because they help fund accessible, sliding-scale care, but the organization has very little staff time for marketing. Early data shows a mismatch: Instagram brings the most visitors but with short visits, the homepage gets the most views but the least attention, and few visitors reach the donation pathway. The organization can see *how much* traffic it gets, but not *which* traffic is worth its limited time.
 
 ## Target Audience
 
-- **Primary:** The nonprofit's Executive Director, who decides where limited staff time and marketing effort should go.
-- **Secondary:** My CEP team and faculty mentor, who will use the findings to guide website, Ad Grants, and donor-outreach work. Recruiters viewing my portfolio are also an audience, since the project shows an end-to-end analytics workflow.
+- **Primary:** The nonprofit's Executive Director, who decides where staff time and marketing effort go
+- **Secondary:** My capstone team and faculty mentor, who will use the findings to guide website and donor-outreach work
 
 ## Research Questions
 
-1. **Channel quality:** Does engagement rate differ significantly across the main traffic sources (Instagram, Google organic, and direct)?
-2. **Content attention:** Which pages draw views but fail to hold attention, and how far is the donation pathway from where visitors land?
-3. **Device:** Does engagement differ by device, and what does that mean for a site where most users are on mobile?
-4. **Tracking readiness:** Which events and key events are reliably measured, and what gaps prevent the organization from tracking donations?
-5. **Priority:** Based on these results, which channel and pages should the organization prioritize for donor outreach?
+1. Does engagement rate differ significantly across the main traffic sources (Instagram, Google organic, and direct)?
+2. Which pages attract views but fail to hold attention, and how far is the donation pathway from where visitors land?
+3. Does engagement differ by device?
+4. Which channel and pages should the organization prioritize for donor outreach?
 
 ## Expected Impact
 
-- **Better use of limited staff time:** Shows which channels bring engaged visitors, so the team can focus on them instead of spreading effort evenly.
-- **Clear direction for the homepage redesign:** Identifies the homepage's 12-second average engagement and the missing donation pathway as the highest-value fixes.
-- **Donor outreach strategy:** Supports my capstone AO4 (Content Marketing & Donor Outreach) by showing where supporters already engage, especially Instagram and the Community Events and Volunteer pages.
-- **A measurable baseline:** Creates the "before" picture that later campaigns, website changes, and the Google Ad Grants launch can be compared against.
-- **Tracking roadmap:** Documents which conversions are working and which still need setup, such as donation tracking.
+- **Focus limited staff time** on the channels that bring engaged visitors
+- **Prioritize the homepage redesign**, adding impact stats and a visible donation ask where most visits start
+- **Shape my capstone donor-outreach strategy (AO4)** around where supporters already engage
+- **Set a baseline** for measuring later website changes and campaigns
 
 ## Methods
 
-The project will follow the standard analytics workflow: **import → clean → transform → analyze → visualize → communicate**, all in R and Quarto.
-
-| Step | Method | Purpose |
+| Step | Method | Tool |
 |---|---|---|
-| Data preparation | Export GA4 reports to CSV; clean and reshape with `dplyr` and `tidyr` | Build tidy tables by source, page, and device |
-| Descriptive analysis | KPIs, shares, rates, and rankings | Summarize traffic, engagement, and content performance |
-| Hypothesis test (RQ1, RQ3) | **Chi-square test of independence** on engaged vs. non-engaged sessions by source and by device | Test whether engagement differs by channel and device |
-| Pairwise comparison | **Two-proportion z-tests** with Bonferroni correction | Identify which specific channels differ |
-| Content gap analysis (RQ2) | Compare each page's share of views with its average engagement time (quadrant chart) | Find pages that attract traffic but lose attention |
-| Tracking audit (RQ4) | Event validation table from DebugView and Admin | Show which outcomes can be measured |
-| Visualization | `ggplot2` and `plotly` charts | Make findings clear for a non-technical director |
-| Communication | **Quarto Revealjs** slide deck with speaker notes, published on the website | Present insights and recommendations |
+| Data preparation | Export GA4 reports to CSV; clean and reshape | R (`readr`, `dplyr`) |
+| Descriptive analysis | KPIs, shares, and rankings by source, page, and device | R |
+| Hypothesis testing | **Chi-square test of independence** on engaged vs. non-engaged sessions by source; **pairwise proportion tests** with Bonferroni correction; **Fisher's exact test** by device | R |
+| Content gap analysis | Quadrant chart of each page's share of views vs. average engagement time | R (`ggplot2`) |
+| Communication | Slide deck with charts, findings, and recommendations | **Quarto Revealjs** |
 
-**Preliminary result (RQ1):** A chi-square test on the first month's data already shows a significant difference in engagement rate by source (χ² = 22.96, df = 2, *p* < .001). Instagram sessions had a 76.1% engagement rate, compared with 68.2% for Google organic and 57.1% for direct. After a Bonferroni correction, the Instagram vs. direct difference is significant (*p* < .001). The other pairs are not significant at this sample size.
+**Preliminary result:** Engagement rate differs significantly by source (χ² = 22.96, df = 2, *p* < .001). Instagram sessions had a 76% engagement rate compared with 57% for direct traffic, and that difference holds after Bonferroni correction.
 
-**Limitations:** The baseline covers only a few weeks of data, average engagement time is reported without a variance, so it is compared descriptively, and GA4 data is observational. Results will be framed as associations, not causes.
+# Timeline
 
-## Final Deliverables
+| Weeks | Project 1: Website Traffic | Project 2: Revealjs |
+|---|---|---|
+| Now | GA4 tag live; Search Console and BigQuery linked | First draft of deck published |
+| Next 2–3 weeks | Collect data; build Looker Studio dashboard | Refine charts and speaker notes |
+| Following 2 weeks | BigQuery SQL analysis, funnel and chi-square tests | Refresh with newer GA4 data if available |
+| Final week | Write insights report and recommendations; publish | Final presentation |
 
-- A Quarto **Revealjs presentation** (`.qmd` and rendered HTML) published under the Marketing Analytics Projects tab
-- The cleaned data files and R code in the GitHub repository, so the analysis is reproducible
-- A short written summary of insights and recommendations on the project's page
+# Final Deliverables
+
+Each project will be published on the website as a full analytics report following a standard structure: **executive summary → business problem → data → methods → results → insights and recommendations → limitations**. The `.qmd` source files and rendered HTML will be in the GitHub repository so the work is reproducible.

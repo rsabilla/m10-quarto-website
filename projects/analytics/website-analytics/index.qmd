@@ -1,11 +1,15 @@
 ---
-title: "Website Analytics"
-subtitle: "How visitors find and use this portfolio: GA4 → Search Console → BigQuery → Looker Studio"
+title: "Who Visits My Portfolio? A GA4 Website Traffic Analysis"
+description: "End-to-end web analytics on this site: GA4, Google Search Console, BigQuery, and a Looker Studio dashboard, with a Quarto report on traffic and conversions."
+date: 2026-10-27
+categories: [GA4, Search Console, BigQuery, Looker Studio, SQL]
+image: thumbnail.png
 ---
+
 
 ::: {.callout-warning}
 ## Report in progress
-Tracking on this site started on **[DATE GA4 WAS INSTALLED]**. The data sections below will be filled in once enough traffic has been collected.
+GA4 tracking on this site started in **late October 2026**. The data sections below will be filled in once enough traffic has been collected.
 :::
 
 ## Objective

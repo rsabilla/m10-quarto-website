@@ -13,6 +13,7 @@
     "listing": "/analytics.html",
     "items": [
       "/projects/analytics/followers-to-donors/index.html",
+      "/projects/analytics/website-analytics/index.html",
       "/projects/analytics/sql-portfolio/index.html",
       "/projects/analytics/shopify-channel-analysis/index.html"
     ]

@@ -1,0 +1,408 @@
+[
+  {
+    "objectID": "projects/analytics/followers-to-donors/slides.html#the-problem",
+    "href": "projects/analytics/followers-to-donors/slides.html#the-problem",
+    "title": "From Followers to Donors",
+    "section": "The problem",
+    "text": "The problem\n\n\nA small equine-therapy nonprofit relies on donations to keep care affordable, but has very little staff time for marketing.\nGA4 went live in October 2026. The director’s question:\n\nWhich visitors are worth our limited time, and why aren’t they reaching the donation page?\n\n\n\n\n\n\n\n\nAudience\n\n\nExecutive Director, who decides where marketing effort goes.\n\n\n\n\n\n\n\n\n\nData\n\n\nGA4 · Sep 18 – Oct 15, 2026 · aggregated, no personal data\n\n\n\n\n\nFrame this as a resource-allocation question, not a traffic question."
+  },
+  {
+    "objectID": "projects/analytics/followers-to-donors/slides.html#first-month-at-a-glance",
+    "href": "projects/analytics/followers-to-donors/slides.html#first-month-at-a-glance",
+    "title": "From Followers to Donors",
+    "section": "First month at a glance",
+    "text": "First month at a glance\n\n\n902\nsessions\n\n764\nactive users\n\n70.29%\nengagement rate\n\n0\nkey events in reports\n\n\n\nTraffic is real, but zero key events have been recorded in reports yet\ngenerate_lead was just validated in DebugView, and donations are not tracked yet"
+  },
+  {
+    "objectID": "projects/analytics/followers-to-donors/slides.html#instagram-brings-half-the-traffic",
+    "href": "projects/analytics/followers-to-donors/slides.html#instagram-brings-half-the-traffic",
+    "title": "From Followers to Donors",
+    "section": "Instagram brings half the traffic",
+    "text": "Instagram brings half the traffic"
+  },
+  {
+    "objectID": "projects/analytics/followers-to-donors/slides.html#but-does-that-traffic-engage",
+    "href": "projects/analytics/followers-to-donors/slides.html#but-does-that-traffic-engage",
+    "title": "From Followers to Donors",
+    "section": "But does that traffic engage?",
+    "text": "But does that traffic engage?\n\n\n\n\n\n\n\n\n\n\n\n\nChi-square test of independence\nχ² = 22.96, df = 2, p &lt; .001\nEngagement does depend on the source.\nPairwise (Bonferroni):\n\nInstagram vs. direct: p &lt; .001\nOther pairs: not significant at this sample size"
+  },
+  {
+    "objectID": "projects/analytics/followers-to-donors/slides.html#engaged-but-briefly",
+    "href": "projects/analytics/followers-to-donors/slides.html#engaged-but-briefly",
+    "title": "From Followers to Donors",
+    "section": "Engaged, but briefly",
+    "text": "Engaged, but briefly\nInstagram has the highest engagement rate but the shortest visits (26s). Google organic visitors stay the longest (56s)."
+  },
+  {
+    "objectID": "projects/analytics/followers-to-donors/slides.html#where-attention-is-lost",
+    "href": "projects/analytics/followers-to-donors/slides.html#where-attention-is-lost",
+    "title": "From Followers to Donors",
+    "section": "Where attention is lost",
+    "text": "Where attention is lost\nThe homepage gets about half of all views but holds visitors only 12 seconds, and no donation page made the top 10."
+  },
+  {
+    "objectID": "projects/analytics/followers-to-donors/slides.html#mobile-first-no-question",
+    "href": "projects/analytics/followers-to-donors/slides.html#mobile-first-no-question",
+    "title": "From Followers to Donors",
+    "section": "Mobile-first, no question",
+    "text": "Mobile-first, no question\n\n\n\n\n\n\n\n\n\n\n\n\n\n88% of users are on mobile (87.6% per GA4)\nMobile engagement rate: 71.88%; desktop: 61.86%\nEngagement rate differs by device: Fisher’s exact test, p = 0.029 (used because tablet counts are small)\n\nDesktop visits run longer (79s), but mobile is where the audience is."
+  },
+  {
+    "objectID": "projects/analytics/followers-to-donors/slides.html#recommendations",
+    "href": "projects/analytics/followers-to-donors/slides.html#recommendations",
+    "title": "From Followers to Donors",
+    "section": "Recommendations",
+    "text": "Recommendations\n\nMake Instagram the primary donor channel. It’s the biggest, most engaged source. Add UTM-tagged donation links and a clear ask.\nFix the homepage first. Add impact stats and a visible Donate button above the fold, since half of all visitors land there.\nBring the donation pathway into the top 10. Link to it from Community Events and Volunteer, the pages supporters already spend time on.\nDesign mobile-first. Test every donation step on a phone.\nFinish tracking. Set up completed donations as a key event so the next report measures dollars, not just clicks."
+  },
+  {
+    "objectID": "projects/analytics/followers-to-donors/slides.html#limitations-next-steps",
+    "href": "projects/analytics/followers-to-donors/slides.html#limitations-next-steps",
+    "title": "From Followers to Donors",
+    "section": "Limitations & next steps",
+    "text": "Limitations & next steps\nLimitations\n\nOnly a few weeks of data, so results are an early baseline\nGA4 is observational: results show associations, not causes\nAverage engagement time has no variance in standard reports, so it’s compared descriptively\n\nNext steps\n\nRefresh with later GA4 exports and compare before and after donor campaigns and the homepage redesign\nExport raw events to BigQuery for session-level analysis\nAdd completed-donation tracking, then measure donation conversion rate by channel"
+  },
+  {
+    "objectID": "projects/analytics/followers-to-donors/slides.html#thank-you",
+    "href": "projects/analytics/followers-to-donors/slides.html#thank-you",
+    "title": "From Followers to Donors",
+    "section": "Thank you",
+    "text": "Thank you\nRon Stephen Sabilla MSDM, Cal Poly Pomona\ngithub.com/rsabilla"
+  },
+  {
+    "objectID": "projects/marketing/personal-brand/index.html",
+    "href": "projects/marketing/personal-brand/index.html",
+    "title": "Building My Personal Brand Website",
+    "section": "",
+    "text": "I wanted this site to feel like a personal brand, not a default template: Cal Poly Pomona green as the primary color, gold for accents, and clean, reusable components that stay consistent across every page."
+  },
+  {
+    "objectID": "projects/marketing/personal-brand/index.html#brand-goals",
+    "href": "projects/marketing/personal-brand/index.html#brand-goals",
+    "title": "Building My Personal Brand Website",
+    "section": "",
+    "text": "I wanted this site to feel like a personal brand, not a default template: Cal Poly Pomona green as the primary color, gold for accents, and clean, reusable components that stay consistent across every page."
+  },
+  {
+    "objectID": "projects/marketing/personal-brand/index.html#why-style-a-quarto-site",
+    "href": "projects/marketing/personal-brand/index.html#why-style-a-quarto-site",
+    "title": "Building My Personal Brand Website",
+    "section": "Why Style a Quarto Site?",
+    "text": "Why Style a Quarto Site?\nQuarto sites look clean out of the box thanks to Bootstrap themes, but every site using the default theme looks the same. CSS and SCSS let you match your personal or client brand (colors, fonts, spacing) so the site feels like yours.\n\n\n\n\n\n\nTipQuick definitions\n\n\n\n\nCSS (Cascading Style Sheets): the language browsers use to style HTML (colors, fonts, layout).\nSCSS (Sassy CSS): a superset of CSS that adds variables, nesting, and functions. Quarto compiles it into regular CSS when you render."
+  },
+  {
+    "objectID": "projects/marketing/personal-brand/index.html#option-1-plain-css",
+    "href": "projects/marketing/personal-brand/index.html#option-1-plain-css",
+    "title": "Building My Personal Brand Website",
+    "section": "Option 1: Plain CSS",
+    "text": "Option 1: Plain CSS\nThe simplest approach is a .css file linked in _quarto.yml:\n\n\n_quarto.yml\n\nformat:\n  html:\n    theme: cosmo\n    css: styles.css\n\n\n\nstyles.css\n\nh2 {\n  color: #1E4D2B;\n  border-bottom: 3px solid #FFB81C;\n}\n\nThis works well for small tweaks, but you repeat values (like #1E4D2B) everywhere, and you can’t change Bootstrap’s built-in variables."
+  },
+  {
+    "objectID": "projects/marketing/personal-brand/index.html#option-2-scss-theme-file-what-this-site-uses",
+    "href": "projects/marketing/personal-brand/index.html#option-2-scss-theme-file-what-this-site-uses",
+    "title": "Building My Personal Brand Website",
+    "section": "Option 2: SCSS Theme File (What This Site Uses)",
+    "text": "Option 2: SCSS Theme File (What This Site Uses)\nA Quarto SCSS file has two special sections:\n\n\n\n\n\n\n\n\nSection\nPurpose\nExample\n\n\n\n\n/*-- scss:defaults --*/\nSet variables before Bootstrap compiles: theme colors, fonts, navbar\n$primary: #1E4D2B;\n\n\n/*-- scss:rules --*/\nWrite custom CSS rules that use those variables\n.card-box { ... }\n\n\n\nThen layer it on top of a Bootswatch theme in _quarto.yml:\n\n\n_quarto.yml\n\nformat:\n  html:\n    theme:\n      light: [cosmo, custom.scss]\n\nHere’s a trimmed version of this site’s actual custom.scss:\n\n\ncustom.scss\n\n/*-- scss:defaults --*/\n$brand-green: #1E4D2B;\n$brand-gold:  #FFB81C;\n$primary:     $brand-green;   // navbar + buttons turn green\n$font-family-sans-serif: \"Inter\", system-ui, sans-serif;\n\n/*-- scss:rules --*/\nh2 {\n  border-bottom: 3px solid $brand-gold;\n}\n\n.card-box {\n  border-radius: 12px;\n  box-shadow: 0 2px 8px rgba(30, 77, 43, .06);\n  &:hover {                    // nesting: hover state lives inside the rule\n    transform: translateY(-2px);\n  }\n}\n\nBecause $primary is set before Bootstrap compiles, the navbar, links, buttons, and callouts all pick up the brand green automatically. One variable change restyles the whole site."
+  },
+  {
+    "objectID": "projects/marketing/personal-brand/index.html#applying-custom-classes-in-quarto",
+    "href": "projects/marketing/personal-brand/index.html#applying-custom-classes-in-quarto",
+    "title": "Building My Personal Brand Website",
+    "section": "Applying Custom Classes in Quarto",
+    "text": "Applying Custom Classes in Quarto\nOnce a class exists in your SCSS, you can apply it anywhere with fenced divs (:::) or spans ([]{}).\n\nMarkdownResult\n\n\n::: {.demo-highlight}\n**Insight:** Organic search drove the most donations this quarter.\n:::\n\nI know [SQL]{.skill} and [R]{.skill}.\n\n\n\nInsight: Organic search drove the most donations this quarter.\n\nI know SQL and R."
+  },
+  {
+    "objectID": "projects/marketing/personal-brand/index.html#scss-features-worth-knowing",
+    "href": "projects/marketing/personal-brand/index.html#scss-features-worth-knowing",
+    "title": "Building My Personal Brand Website",
+    "section": "SCSS Features Worth Knowing",
+    "text": "SCSS Features Worth Knowing\n\n\n\nVariables\nStore a value once ($brand-green) and reuse it everywhere. Change it in one place to rebrand.\n\n\n\n\nNesting\nWrite &:hover inside .card-box instead of repeating the selector. It keeps related styles together.\n\n\n\n\nFunctions\nlighten($brand-green, 15%) makes color variations on the fly, like the gradient in the demo box above."
+  },
+  {
+    "objectID": "projects/marketing/personal-brand/index.html#light-dark-mode",
+    "href": "projects/marketing/personal-brand/index.html#light-dark-mode",
+    "title": "Building My Personal Brand Website",
+    "section": "Light & Dark Mode",
+    "text": "Light & Dark Mode\nSCSS also makes a dark-mode toggle easy. Quarto adds the switch to the navbar automatically:\n\n\n_quarto.yml\n\nformat:\n  html:\n    theme:\n      light: [cosmo, custom.scss]\n      dark:  [darkly, custom-dark.scss]"
+  },
+  {
+    "objectID": "projects/marketing/personal-brand/index.html#tips-for-marketing-sites",
+    "href": "projects/marketing/personal-brand/index.html#tips-for-marketing-sites",
+    "title": "Building My Personal Brand Website",
+    "section": "Tips for Marketing Sites",
+    "text": "Tips for Marketing Sites\n\nStart with brand variables. Pull the client’s hex codes from their style guide into scss:defaults first.\nUse $primary instead of hard-coding colors, so buttons and links stay consistent.\nKeep custom classes reusable (.card-box, .skill) instead of styling one-off elements.\nCheck contrast. Brand gold on white can fail accessibility, so use it for accents and borders, not body text.\nInspect in the browser (right-click → Inspect) to find the exact selector you need to override."
+  },
+  {
+    "objectID": "projects/marketing/cep-donor-outreach/index.html",
+    "href": "projects/marketing/cep-donor-outreach/index.html",
+    "title": "Donor Outreach Strategy for a Nonprofit Client",
+    "section": "",
+    "text": "Wellness Ranch Therapy is a nonprofit in Rancho Cucamonga offering equine-assisted therapy. Donations are its top-priority website outcome because they help fund accessible, sliding-scale care. Early GA4 data showed that supporters are arriving, especially from Instagram, but few of them reach the donation pathway, and the homepage, where most visits start, holds attention only briefly."
+  },
+  {
+    "objectID": "projects/marketing/cep-donor-outreach/index.html#the-challenge",
+    "href": "projects/marketing/cep-donor-outreach/index.html#the-challenge",
+    "title": "Donor Outreach Strategy for a Nonprofit Client",
+    "section": "",
+    "text": "Wellness Ranch Therapy is a nonprofit in Rancho Cucamonga offering equine-assisted therapy. Donations are its top-priority website outcome because they help fund accessible, sliding-scale care. Early GA4 data showed that supporters are arriving, especially from Instagram, but few of them reach the donation pathway, and the homepage, where most visits start, holds attention only briefly."
+  },
+  {
+    "objectID": "projects/marketing/cep-donor-outreach/index.html#my-role-ao4-content-marketing-donor-outreach",
+    "href": "projects/marketing/cep-donor-outreach/index.html#my-role-ao4-content-marketing-donor-outreach",
+    "title": "Donor Outreach Strategy for a Nonprofit Client",
+    "section": "My Role: AO4, Content Marketing & Donor Outreach",
+    "text": "My Role: AO4, Content Marketing & Donor Outreach\nI own the capstone’s fourth analytics objective: develop donor-focused content and outreach campaigns, then measure whether they move people toward giving.\n\n\n\n🎯 Positioning\nCommunity-based, experiential mental-health support. Messaging leads with the horses, the community, and the real need for accessible care in the Inland Empire.\n\n\n\n\n💬 Content strategy\nBuilt around research on why people give: awareness of need, a clear ask, and proof that a gift makes a difference (Bekkers & Wiepking, 2011).\n\n\n\n\n📖 Ethical storytelling\nStories center on horses, staff, volunteers, and approved, de-identified outcomes, never identifiable clients without consent.\n\n\n\n\n📈 Measurement\nEvery campaign link is UTM-tagged so GA4 can tie donation-page visits back to the specific post, email, or channel."
+  },
+  {
+    "objectID": "projects/marketing/cep-donor-outreach/index.html#plan",
+    "href": "projects/marketing/cep-donor-outreach/index.html#plan",
+    "title": "Donor Outreach Strategy for a Nonprofit Client",
+    "section": "Plan",
+    "text": "Plan\n\n\n\n\n\n\n\n\nPhase\nTiming\nWork\n\n\n\n\nAudit & baseline\nFall 2026\nInventory donor content, code social posts (information / community / action), map the donor journey, record the baseline\n\n\nBuild & launch\nSpring 2027\nHomepage impact stats, donor stories, social and email campaign\n\n\nEvaluate\nSpring–Summer 2027\nPre/post comparison, channel and content comparison, message tests\n\n\n\nSkills: marketing strategy, content planning, nonprofit fundraising, brand messaging, campaign measurement"
+  },
+  {
+    "objectID": "projects/analytics/sql-portfolio/index.html",
+    "href": "projects/analytics/sql-portfolio/index.html",
+    "title": "SQL & BigQuery Learning Portfolio",
+    "section": "",
+    "text": "A GitHub Pages portfolio built across three IBM 6500 assignments. Each report includes the course certificate, chapter-by-chapter notes, and SQL examples rewritten around marketing data like orders, campaigns, and GA4 sessions.\nSkills: COUNT/DISTINCT, filtering, aggregates, GROUP BY/HAVING, BigQuery GoogleSQL\nView the portfolio →\n\n\n\n Back to top"
+  },
+  {
+    "objectID": "projects/analytics/followers-to-donors/index.html",
+    "href": "projects/analytics/followers-to-donors/index.html",
+    "title": "From Followers to Donors",
+    "section": "",
+    "text": "A small equine-therapy nonprofit (my MSDM capstone client) needs to know which website visitors are worth its limited marketing time, and why they aren’t reaching the donation page. I analyzed the first month of GA4 data in R and presented the findings to the Executive Director as a Quarto Revealjs deck.\nOpen the presentation ↗\n\n\nPress F for full screen and S for speaker notes."
+  },
+  {
+    "objectID": "projects/analytics/followers-to-donors/index.html#overview",
+    "href": "projects/analytics/followers-to-donors/index.html#overview",
+    "title": "From Followers to Donors",
+    "section": "",
+    "text": "A small equine-therapy nonprofit (my MSDM capstone client) needs to know which website visitors are worth its limited marketing time, and why they aren’t reaching the donation page. I analyzed the first month of GA4 data in R and presented the findings to the Executive Director as a Quarto Revealjs deck.\nOpen the presentation ↗\n\n\nPress F for full screen and S for speaker notes."
+  },
+  {
+    "objectID": "projects/analytics/followers-to-donors/index.html#project-summary",
+    "href": "projects/analytics/followers-to-donors/index.html#project-summary",
+    "title": "From Followers to Donors",
+    "section": "Project Summary",
+    "text": "Project Summary\n\n\n\n\n\n\n\nData\nGA4 traffic acquisition, pages, and device reports (Sep 18 – Oct 15, 2026): 902 sessions, 764 users\n\n\nProblem\nDonations are the top priority, but no donation page is in the top 10, and zero key events have been recorded\n\n\nAudience\nExecutive Director of the nonprofit\n\n\nMethods\nDescriptive KPIs, chi-square test of independence, Bonferroni pairwise proportion tests, Fisher’s exact test, page quadrant analysis\n\n\nTools\nR (dplyr, ggplot2), Quarto Revealjs"
+  },
+  {
+    "objectID": "projects/analytics/followers-to-donors/index.html#key-insights",
+    "href": "projects/analytics/followers-to-donors/index.html#key-insights",
+    "title": "From Followers to Donors",
+    "section": "Key Insights",
+    "text": "Key Insights\n\nEngagement depends on the channel (χ² = 22.96, p &lt; .001). Instagram has the highest engagement rate (76%), and it’s significantly higher than direct traffic.\nInstagram visits are short (26s), while Google organic visitors stay the longest (56s).\nThe homepage gets half the views but only 12 seconds of attention, so it’s the highest-value place for impact stats and a donation ask.\n88% of users are on mobile, so the donation journey must be built mobile-first."
+  },
+  {
+    "objectID": "projects/analytics/followers-to-donors/index.html#recommendations",
+    "href": "projects/analytics/followers-to-donors/index.html#recommendations",
+    "title": "From Followers to Donors",
+    "section": "Recommendations",
+    "text": "Recommendations\n\nMake Instagram the primary donor channel, with UTM-tagged donation links\nRedesign the homepage with impact stats and a visible Donate button\nLink the donation pathway from the Community Events and Volunteer pages\nTrack completed donations as a GA4 key event"
+  },
+  {
+    "objectID": "website-analytics.html",
+    "href": "website-analytics.html",
+    "title": "Website Analytics",
+    "section": "",
+    "text": "WarningReport in progress\n\n\n\nTracking on this site started on [DATE GA4 WAS INSTALLED]. The data sections below will be filled in once enough traffic has been collected."
+  },
+  {
+    "objectID": "website-analytics.html#objective",
+    "href": "website-analytics.html#objective",
+    "title": "Website Analytics",
+    "section": "Objective",
+    "text": "Objective\nThis page analyzes traffic to my own portfolio website. The goal is to understand who visits, how they find the site, and whether they reach the pages that matter most to a recruiter: my projects and my resume.\nResearch questions\n\nWhich channels bring visitors to the site (organic search, direct, referral, social)?\nWhich search queries lead people to the site in Google?\nWhich pages hold attention, and which lose visitors quickly?\nHow many visitors reach a “conversion” page, such as the Resume or a project case study?"
+  },
+  {
+    "objectID": "website-analytics.html#data-pipeline",
+    "href": "website-analytics.html#data-pipeline",
+    "title": "Website Analytics",
+    "section": "Data Pipeline",
+    "text": "Data Pipeline\n\n\n\n\n\nflowchart LR\n  A[Portfolio website&lt;br/&gt;Quarto on Netlify] --&gt;|gtag.js| B[Google Analytics 4]\n  A --&gt;|sitemap.xml| C[Google Search Console]\n  C --&gt;|linked| B\n  B --&gt;|daily export| D[BigQuery]\n  B --&gt; E[Looker Studio]\n  D --&gt; E\n  D --&gt;|SQL + R| F[This report]\n\n\n\n\n\n\n\n\n\nStep\nTool\nStatus\n\n\n\n\nAdd GA4 tag to the site\nGA4 + _quarto.yml\n☐\n\n\nVerify site and submit sitemap\nGoogle Search Console\n☐\n\n\nLink Search Console to GA4\nGA4 Admin → Product links\n☐\n\n\nTurn on BigQuery export\nGA4 Admin → BigQuery links\n☐\n\n\nBuild dashboard\nLooker Studio\n☐\n\n\nWrite insights report\nQuarto (this page)\n☐"
+  },
+  {
+    "objectID": "website-analytics.html#key-metrics-and-conversions",
+    "href": "website-analytics.html#key-metrics-and-conversions",
+    "title": "Website Analytics",
+    "section": "Key Metrics and Conversions",
+    "text": "Key Metrics and Conversions\n\n\n\n\n\n\n\n\nMetric\nDefinition\nWhy it matters\n\n\n\n\nUsers and sessions\nVisitors and visits to the site\nOverall reach\n\n\nSessions by channel\nOrganic, direct, referral, social\nWhich sources bring visitors\n\n\nEngagement rate\nShare of sessions over 10s, 2+ pages, or with a key event\nQuality of traffic\n\n\nSearch impressions, clicks, CTR\nFrom Search Console\nVisibility in Google\n\n\nKey event: resume_view\nVisit to the Resume page\nMain “conversion” for a recruiter\n\n\nKey event: project_view\nVisit to any project case study\nInterest in my work\n\n\nKey event: file_download\nResume PDF download (GA4 enhanced measurement)\nStrongest signal of interest"
+  },
+  {
+    "objectID": "website-analytics.html#looker-studio-dashboard",
+    "href": "website-analytics.html#looker-studio-dashboard",
+    "title": "Website Analytics",
+    "section": "Looker Studio Dashboard",
+    "text": "Looker Studio Dashboard\n\n\nDashboard will be embedded here."
+  },
+  {
+    "objectID": "website-analytics.html#bigquery-analysis",
+    "href": "website-analytics.html#bigquery-analysis",
+    "title": "Website Analytics",
+    "section": "BigQuery Analysis",
+    "text": "BigQuery Analysis\nExample query used to count sessions by traffic source from the GA4 export:\n\n\nsessions_by_source.sql\n\nSELECT\n  traffic_source.source AS source,\n  traffic_source.medium AS medium,\n  COUNT(DISTINCT CONCAT(user_pseudo_id,\n        CAST((SELECT value.int_value FROM UNNEST(event_params)\n              WHERE key = 'ga_session_id') AS STRING))) AS sessions\nFROM `YOUR-PROJECT.analytics_YOUR-PROPERTY-ID.events_*`\nWHERE _TABLE_SUFFIX BETWEEN '20261101' AND '20261130'\nGROUP BY source, medium\nORDER BY sessions DESC;"
+  },
+  {
+    "objectID": "website-analytics.html#insights",
+    "href": "website-analytics.html#insights",
+    "title": "Website Analytics",
+    "section": "Insights",
+    "text": "Insights\nTo be completed once data is collected. This section will cover:\n\nAcquisition: which channels and search queries drive visits\nEngagement: which pages hold attention and which lose visitors\nConversions: how many visitors reach the Resume and project pages, and from which channels\nRecommendations: changes to content, titles, and internal links to improve visibility and engagement"
+  },
+  {
+    "objectID": "digital-marketing.html",
+    "href": "digital-marketing.html",
+    "title": "Digital Marketing Projects",
+    "section": "",
+    "text": "These projects show how I approach the creative and strategic side of marketing: understanding an audience, shaping a message, and building content and brand experiences that move people to act.\n\n\n   \n    \n    \n      Order By\n      Default\n      \n        Title\n      \n      \n        Date - Oldest\n      \n      \n        Date - Newest\n      \n    \n  \n    \n      \n      \n    \n\n\n\n\n\n\n\n\n\n\nBuilding My Personal Brand Website\n\n\n\nBrand Development\n\nWeb Design\n\nSCSS\n\n\n\nBrand development for this portfolio: a custom SCSS theme, consistent visual identity, and reusable design components in Quarto.\n\n\n\nOct 27, 2026\n\n\n\n\n\n\n\n\n\n\n\n\n\nDonor Outreach Strategy for a Nonprofit Client\n\n\n\nMarketing Strategy\n\nContent Marketing\n\nNonprofit\n\nCEP\n\n\n\nMSDM capstone (AO4): donor-focused content, impact storytelling, and outreach campaigns to increase donations for Wellness Ranch Therapy.\n\n\n\nOct 26, 2026\n\n\n\n\n\n\n\n\n\n\n\n\n\nSocial Media & Content for Associated Students, Inc.\n\n\n\nSocial Media\n\nVideo Production\n\nContent Strategy\n\nCreative\n\n\n\nReels, short-form video, captions, and campaigns for @asicpp (15.6K followers) and @cppcampusrec (5.5K followers) at Cal Poly Pomona.\n\n\n\nSep 30, 2026\n\n\n\n\n\n\n\n\n\n\n\n\n\nDrums & Percussion Marketing at Yamaha\n\n\n\nBrand Development\n\nMarket Positioning\n\nSEO\n\nE-commerce\n\nContent Strategy\n\n\n\nBrochure design, SEO landing-page edits, competitive pricing analysis, Amazon listing optimization, and DCI Championship social content.\n\n\n\nOct 1, 2025\n\n\n\n\n\n\n\n\n\n\n\n\n\nGrowing the Ontario Jr Reign on Social\n\n\n\nSocial Media\n\nContent Strategy\n\nVideo Production\n\nSports Marketing\n\n\n\nSocial content strategy across TikTok, Instagram, Facebook, and X that grew the team’s combined following by 273.94%.\n\n\n\nMar 1, 2025\n\n\n\n\n\n\nNo matching items\n\n\n\n\n\n Back to top"
+  },
+  {
+    "objectID": "index.html",
+    "href": "index.html",
+    "title": "Ron Stephen Sabilla",
+    "section": "",
+    "text": "GitHub  Email\n\n\n\nHi, I’m Ron! I’m a graduate student in the Master of Science in Digital Marketing (MSDM) program at Cal Poly Pomona. I like working where data and storytelling meet: figuring out what the numbers say, then turning that into content people actually want to watch or read.\nI work as a Social Media & Marketing Assistant at Associated Students, Inc. (ASI), creating content for accounts with 20K+ combined followers, and I’ve interned in marketing at Yamaha Corporation of America and the Ontario Jr Reign. Right now I’m also on an MSDM capstone team helping a nonprofit client, Wellness Ranch Therapy, use its website data to reach more supporters."
+  },
+  {
+    "objectID": "index.html#personal-statement",
+    "href": "index.html#personal-statement",
+    "title": "Ron Stephen Sabilla",
+    "section": "Personal Statement",
+    "text": "Personal Statement\nI got into marketing through content: making videos, posts, and promo pieces that people actually stop and watch, from growing a junior hockey team’s social following to producing Reels for campus programs. Graduate school showed me the other half of the job. Good content is only as useful as your ability to prove what it did. Now I like working on both sides: setting up the tracking, finding what the data says, and turning it into the next piece of content or the next decision.\nI’m especially drawn to mission-driven work. Helping a small nonprofit figure out which visitors turn into supporters has shown me how much a clear analysis can matter when time and budget are tight. I’m looking for a role in digital marketing analytics where I can keep connecting the creative and the measurable."
+  },
+  {
+    "objectID": "index.html#current-capstone-wellness-ranch-therapy",
+    "href": "index.html#current-capstone-wellness-ranch-therapy",
+    "title": "Ron Stephen Sabilla",
+    "section": "Current Capstone: Wellness Ranch Therapy",
+    "text": "Current Capstone: Wellness Ranch Therapy\nWellness Ranch Therapy is a nonprofit in Rancho Cucamonga that offers equine-assisted therapy. Our team is helping them grow their reach and donations through website & SEO improvements, GA4 analytics, Google Ad Grants, and donor outreach. Here’s my part:\n\n\n\n📊 Measurement setup\nHelped set up and validate GA4 tracking so the organization can see which visits lead to inquiries, not just page views.\n\n\n\n\n🔎 Baseline insights\nEarly data showed about half of visitors come from Instagram and nearly 9 in 10 browse on mobile, which points to a social-first, mobile-first strategy.\n\n\n\n\n📄 Content opportunities\nThe homepage draws the most visits but the shortest attention, so it’s the first place to add impact stats and a clear way to give.\n\n\n\n\n💚 Donor outreach (my AO4)\nLeading donor-focused content, impact storytelling, and UTM-tracked outreach campaigns, then measuring their effect on donations.\n\n\n\nSee my analysis deck →"
+  },
+  {
+    "objectID": "index.html#career-aspirations",
+    "href": "index.html#career-aspirations",
+    "title": "Ron Stephen Sabilla",
+    "section": "Career Aspirations",
+    "text": "Career Aspirations\nI want to build a career in digital marketing analytics, helping brands and nonprofits make smarter decisions with their data. My goal is to be the person on a team who can set up the tracking, run the analysis, and explain the results in a way that leads to action. Long term, I’d love to help mission-driven organizations use their data to reach more of the people they serve."
+  },
+  {
+    "objectID": "index.html#skills",
+    "href": "index.html#skills",
+    "title": "Ron Stephen Sabilla",
+    "section": "Skills",
+    "text": "Skills\n\nAnalytics & Data SQLGoogle BigQueryRMachine Learning for MarketingGoogle Analytics 4Google Tag Manager\nReporting & Web QuartoDashboardsHTML / CSS / SCSSGitHub Pages\nCreative & Marketing Social Media StrategyShort-form Video & ReelsCopywritingSEOContent CalendarsCompetitive Analysis\nTools HootsuiteBufferMonday.comCanvaCapCutSemrushMicrosoft 365Google Workspace"
+  },
+  {
+    "objectID": "index.html#education",
+    "href": "index.html#education",
+    "title": "Ron Stephen Sabilla",
+    "section": "Education",
+    "text": "Education\n\nCalifornia State Polytechnic University, Pomona, Master of Science in Digital Marketing Expected May 2027\nRelevant coursework: Applied Machine Learning for Marketing (IBM 6540), SQL & BigQuery (IBM 6500)\n\n\nCalifornia State Polytechnic University, Pomona, Bachelor of Science in Business Administration: Marketing May 2024"
+  },
+  {
+    "objectID": "analytics.html",
+    "href": "analytics.html",
+    "title": "Marketing Analytics Projects",
+    "section": "",
+    "text": "A blog-style collection of my analytics work. Each case study starts with a business question and ends with insights a decision-maker can act on.\n\n\n   \n    \n    \n      Order By\n      Default\n      \n        Title\n      \n      \n        Date - Oldest\n      \n      \n        Date - Newest\n      \n    \n  \n    \n      \n      \n    \n\n\n\n\n\n\n\n\n\n\nFrom Followers to Donors\n\n\n\nRevealjs\n\nGA4\n\nR\n\nHypothesis Testing\n\nCEP\n\n\n\nRevealjs presentation: a chi-square analysis of a nonprofit’s first month of GA4 data, showing which channels bring engaged visitors and where donors are lost.\n\n\n\n\n\nOct 27, 2026\n\n2 min\n\n\n\n\n\n\n\n\n\n\n\nSQL & BigQuery Learning Portfolio\n\n\n\nSQL\n\nBigQuery\n\nGitHub Pages\n\n\n\nThree DataCamp courses (Intro to SQL, Intro to BigQuery, Intermediate SQL) documented with marketing-focused query examples.\n\n\n\n\n\nOct 23, 2026\n\n1 min\n\n\n\n\n\n\n\n\n\n\n\nTraffic Source & AOV Analysis\n\n\n\nR\n\nMachine Learning\n\nE-commerce\n\n\n\nIBM 6540 group project analyzing 60,000 Shopify orders to see how traffic channels affect average order value.\n\n\n\n\n\nSep 10, 2026\n\n1 min\n\n\n\n\nNo matching items\n\n\n\n\n\n Back to top"
+  },
+  {
+    "objectID": "resume.html",
+    "href": "resume.html",
+    "title": "Resume",
+    "section": "",
+    "text": "Download PDF ↓\n\n\nYour browser can’t display the PDF here. Download the resume instead.\n\n\n\n\n\n\n\n\nNoteHow this resume is built\n\n\n\n\n\nThe CV source is cv/cv.Rmd, written in R Markdown with the vitae package and the awesomecv template. Each section is a tibble rendered with detailed_entries() or brief_entries(), so updating the resume means editing a table and re-knitting the PDF.\n\n\n\n\n\n\n Back to top"
+  },
+  {
+    "objectID": "projects/analytics/shopify-channel-analysis/index.html",
+    "href": "projects/analytics/shopify-channel-analysis/index.html",
+    "title": "Traffic Source & AOV Analysis",
+    "section": "",
+    "text": "For our IBM 6540 (Applied Machine Learning for Marketing) group project, our five-person team analyzed a 60,000-row Shopify sales dataset. I owned RO1: traffic source and average order value (AOV) and wrote the conclusion slides.\nFinding: No statistically significant overall difference in AOV between channels, but meaningful channel × category interaction effects. Some channels performed better for specific product categories.\nTools: R, recipes, rsample, glmnet, Quarto revealjs\n\n\n\n Back to top"
+  },
+  {
+    "objectID": "projects/marketing/asi-social-media/index.html",
+    "href": "projects/marketing/asi-social-media/index.html",
+    "title": "Social Media & Content for Associated Students, Inc.",
+    "section": "",
+    "text": "Social Media & Marketing Assistant, Associated Students, Inc. (ASI) at Cal Poly Pomona · May 2026 – Present"
+  },
+  {
+    "objectID": "projects/marketing/asi-social-media/index.html#role",
+    "href": "projects/marketing/asi-social-media/index.html#role",
+    "title": "Social Media & Content for Associated Students, Inc.",
+    "section": "",
+    "text": "Social Media & Marketing Assistant, Associated Students, Inc. (ASI) at Cal Poly Pomona · May 2026 – Present"
+  },
+  {
+    "objectID": "projects/marketing/asi-social-media/index.html#what-i-do",
+    "href": "projects/marketing/asi-social-media/index.html#what-i-do",
+    "title": "Social Media & Content for Associated Students, Inc.",
+    "section": "What I Do",
+    "text": "What I Do\n\n\n\n🎬 Content creation\nWritten, graphic, and video content across Instagram, TikTok, and other platforms, including Reels and short-form video for @asicpp (15.6K followers) and @cppcampusrec (5.5K followers).\n\n\n\n\n📅 Planning & publishing\nPlan content calendars in Monday.com and schedule posts in Hootsuite to keep both accounts consistent.\n\n\n\n\n📊 Performance reporting\nUse Hootsuite analytics to track post performance, audience growth, and engagement, and turn them into reports that shape the next round of content.\n\n\n\n\n✍️ Copy & live coverage\nWrite captions, newsletters, and flyers following ASI’s writing style guide, and cover campus and virtual events live."
+  },
+  {
+    "objectID": "projects/marketing/asi-social-media/index.html#featured-projects",
+    "href": "projects/marketing/asi-social-media/index.html#featured-projects",
+    "title": "Social Media & Content for Associated Students, Inc.",
+    "section": "Featured Projects",
+    "text": "Featured Projects\n\nCampus Rec Try-a-Tri: promo and info video for a beginner triathlon event\nBronco Fusion: promotional video for a campus event\n\nTools: Hootsuite, Monday.com, Canva, CapCut"
+  },
+  {
+    "objectID": "projects/marketing/jr-reign-social/index.html",
+    "href": "projects/marketing/jr-reign-social/index.html",
+    "title": "Growing the Ontario Jr Reign on Social",
+    "section": "",
+    "text": "Social Media Marketing Intern, Ontario Jr Reign · Ontario, CA · June 2024 – March 2025"
+  },
+  {
+    "objectID": "projects/marketing/jr-reign-social/index.html#role",
+    "href": "projects/marketing/jr-reign-social/index.html#role",
+    "title": "Growing the Ontario Jr Reign on Social",
+    "section": "",
+    "text": "Social Media Marketing Intern, Ontario Jr Reign · Ontario, CA · June 2024 – March 2025"
+  },
+  {
+    "objectID": "projects/marketing/jr-reign-social/index.html#result",
+    "href": "projects/marketing/jr-reign-social/index.html#result",
+    "title": "Growing the Ontario Jr Reign on Social",
+    "section": "Result",
+    "text": "Result\n\n📈 273.94% growth\nin combined audience following across TikTok, Instagram, Facebook, and X"
+  },
+  {
+    "objectID": "projects/marketing/jr-reign-social/index.html#how",
+    "href": "projects/marketing/jr-reign-social/index.html#how",
+    "title": "Growing the Ontario Jr Reign on Social",
+    "section": "How",
+    "text": "How\n\nPlatform-specific content: developed and executed posts tailored to each of the four platforms\nShort-form video: edited dynamic video in CapCut to maximize viewer engagement\nConsistent publishing: managed all channels in Buffer to keep the team visible all season\nBusiness impact: content increased team visibility and supported ticket sales throughout the season\n\nTools: Buffer, CapCut, Canva"
+  },
+  {
+    "objectID": "projects/marketing/yamaha-internship/index.html",
+    "href": "projects/marketing/yamaha-internship/index.html",
+    "title": "Drums & Percussion Marketing at Yamaha",
+    "section": "",
+    "text": "Drums and Percussion Marketing Intern, Yamaha Corporation of America · Buena Park, CA · April 2025 – October 2025"
+  },
+  {
+    "objectID": "projects/marketing/yamaha-internship/index.html#role",
+    "href": "projects/marketing/yamaha-internship/index.html#role",
+    "title": "Drums & Percussion Marketing at Yamaha",
+    "section": "",
+    "text": "Drums and Percussion Marketing Intern, Yamaha Corporation of America · Buena Park, CA · April 2025 – October 2025"
+  },
+  {
+    "objectID": "projects/marketing/yamaha-internship/index.html#highlights",
+    "href": "projects/marketing/yamaha-internship/index.html#highlights",
+    "title": "Drums & Percussion Marketing at Yamaha",
+    "section": "Highlights",
+    "text": "Highlights\n\n\n\n📘 Targeted brochure\nCreated a percussion brochure featuring Yamaha products for musicians from middle school through college, supporting brand outreach and educational engagement.\n\n\n\n\n🔍 SEO & web content\nEdited landing pages, infographics, and blog content to improve SEO, user experience, and brand consistency across web and eCommerce platforms.\n\n\n\n\n💲 Competitive pricing analysis\nCompared Yamaha’s pricing against key competitors in Excel to evaluate market positioning and inform marketing decisions.\n\n\n\n\n🛒 Amazon listing optimization\nImproved product descriptions and visuals for the drum and percussion lines to boost clarity, engagement, and conversion."
+  },
+  {
+    "objectID": "projects/marketing/yamaha-internship/index.html#social-campaign-dci-championship-week",
+    "href": "projects/marketing/yamaha-internship/index.html#social-campaign-dci-championship-week",
+    "title": "Drums & Percussion Marketing at Yamaha",
+    "section": "Social Campaign: DCI Championship Week",
+    "text": "Social Campaign: DCI Championship Week\nLed social media content planning for Drum Corps International Championship Week: collected content, wrote captions, and scheduled posts with the social media team, using Excel to manage the calendar and track engagement.\nSkills: brand development, market positioning, SEO, eCommerce, copywriting, Excel"
+  }
+]
